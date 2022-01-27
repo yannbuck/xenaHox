@@ -1,5 +1,6 @@
-### README
+### xenaHox project contents:
+
 UPPMAX_ref.md: reference UPPMAX commands
 
-xena_phylotocol.md: planned protocol w/ changes
+xena_phylotocol.md: planned analysis protocol w/ documented changes
 
