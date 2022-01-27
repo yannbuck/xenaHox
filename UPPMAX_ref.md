@@ -1,4 +1,4 @@
-### UPPMAX reference one-liners
+### UPPMAX reference commands
 ##### UPPMAX to local
 `rsync -ah [user]@[cluster].uppmax.uu.se:/UPPMAX_PATH/ /LOCAL_PATH/`
 ##### local to UPPMAX
