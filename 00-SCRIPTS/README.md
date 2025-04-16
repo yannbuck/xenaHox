@@ -1,9 +1,6 @@
 ### get_upstream_hd_downstream.pl
 script used to dissect flanking 20 amino acid C-terminal and N-terminal regions from the 60-amino acid homeodomains  
 
-### hmm2aln.pl
-script to automate gene family phylogeny based using HMM
-
 ### nogaps.py
 script used to identify sequences with 5 or more gaps
 
