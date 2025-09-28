@@ -1,0 +1,1189 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Input file name: hox_aligned_fixed_R2.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (10000 replicates)
+Random seed number: 591496
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 261 sequences with 60 amino-acid sites
+Number of constant sites: 7 (= 11.6667% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 7 (= 11.6667% of all sites)
+Number of parsimony informative sites: 50
+Number of distinct site patterns: 59
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0412
+  pi(R) = 0.1613
+  pi(N) = 0.0525
+  pi(D) = 0.0133
+  pi(C) = 0.0071
+  pi(Q) = 0.0705
+  pi(E) = 0.0926
+  pi(G) = 0.0105
+  pi(H) = 0.0170
+  pi(I) = 0.0491
+  pi(L) = 0.0930
+  pi(K) = 0.1092
+  pi(M) = 0.0213
+  pi(F) = 0.0481
+  pi(P) = 0.0104
+  pi(S) = 0.0411
+  pi(T) = 0.0727
+  pi(W) = 0.0211
+  pi(Y) = 0.0386
+  pi(V) = 0.0293
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5359
+
+ Category  Relative_rate  Proportion
+  1         0.0402         0.2500
+  2         0.2747         0.2500
+  3         0.8447         0.2500
+  4         2.8404         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -8756.0456 (s.e. 1079.4809)
+Unconstrained log-likelihood (without tree): -244.2744
+Number of free parameters (#branches + #model parameters): 537
+Akaike information criterion (AIC) score: 18586.0912
+Corrected Akaike information criterion (AICc) score: 596398.0912
+Bayesian information criterion (BIC) score: 19710.7542
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 537
+Sample size (n, alignment length): 60
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 67.8208
+Sum of internal branch lengths: 27.1576 (40.0431% of tree length)
+
+WARNING: 51 near-zero internal branches (<0.0167) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'A.agile_Cdx' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**A.agile_Cdx
+|
+|                                                                                                  +**A.agile_Evx_
+|                                                                                               +--| (74.9/100)
+|                                                                                               |  +**P.variabilis_Evx
+|                                                                                            +--| (0/93)
+|                                                                                            |  +--I.pulchra_Evx
+|                                                                                         +--| (45.3/94)
+|                                                                                         |  |     +--D.longitubus_Evx
+|                                                                                         |  |  +**| (0/87)
+|                                                                                         |  |  |  +--P.rubra_Evx
+|                                                                                         |  +--| (93.2/97)
+|                                                                                         |     +--H.miamia_Evx
+|                                                                                      +--| (96.3/98)
+|                                                                                      |  |  +**P.naikaiensis_G_Evx
+|                                                                                      |  +--| (88.9/100)
+|                                                                                      |     +--S.roscoffensis_Evx
+|                                                                                   +--| (77/96)
+|                                                                                   |  |  +**B.floridae_EvxA
+|                                                                                   |  +--| (90.1/95)
+|                                                                                   |     |           +--C.elegans_Evx_vab7
+|                                                                                   |     |        +--| (49.9/94)
+|                                                                                   |     |        |  +**S.purpuratus_Evx
+|                                                                                   |     |     +--| (87.6/97)
+|                                                                                   |     |     |  |  +--N.vectensis_Evx
+|                                                                                   |     |     |  +--| (88.8/99)
+|                                                                                   |     |     |     |     +--N.westbladi_Evx2
+|                                                                                   |     |     |     |  +--| (96.4/100)
+|                                                                                   |     |     |     |  |  +--N.westbladi_P_Evx1
+|                                                                                   |     |     |     +**| (0/95)
+|                                                                                   |     |     |        +--S.psammicola_Evx
+|                                                                                   |     |  +--| (26.4/71)
+|                                                                                   |     |  |  +--X.bocki_G_Evx__SPLICED
+|                                                                                   |     +--| (84.7/79)
+|                                                                                   |        |  +--D.melanogaster_Evx_eve
+|                                                                                   |        +--| (76.7/93)
+|                                                                                   |           +--P.caudatus_Evx
+|                                                                             +-----| (98.8/100)
+|                                                                             |     +--B.floridae_EvxB
+|                                                                          +--| (23.6/35)
+|                                                                          |  +---C.elegans_Mnx_ceh12
+|                                                                       +**| (0/25)
+|                                                                       |  |     +--B.floridae_Mnx
+|                                                                       |  |  +--| (77.4/95)
+|                                                                       |  |  |  |                 +**D.gymnopharyngeus_Mnx
+|                                                                       |  |  |  |              +**| (0/99)
+|                                                                       |  |  |  |              |  +**H.miamia_Mnx
+|                                                                       |  |  |  |           +--| (77.3/81)
+|                                                                       |  |  |  |           |  |  +--N.sp2_Mnx
+|                                                                       |  |  |  |           |  +--| (77/82)
+|                                                                       |  |  |  |           |     +--X.bocki_G_Mnx_
+|                                                                       |  |  |  |        +--| (78.5/82)
+|                                                                       |  |  |  |        |  +--I.pulchra_Mnx
+|                                                                       |  |  |  |     +--| (92.8/91)
+|                                                                       |  |  |  |     |  |  +**P.rhammifera_Mnx
+|                                                                       |  |  |  |     |  +**| (2.45/95)
+|                                                                       |  |  |  |     |     +**S.roscoffensis_Mnx
+|                                                                       |  |  |  |  +--| (31.6/85)
+|                                                                       |  |  |  |  |  |  +----N.westbladi_Mnx
+|                                                                       |  |  |  |  |  +**| (0/79)
+|                                                                       |  |  |  |  |     +**S.purpuratus_MN_P
+|                                                                       |  |  |  +--| (27.7/78)
+|                                                                       |  |  |     |  +**M.stichopi_Mnx
+|                                                                       |  |  |     +--| (87.8/100)
+|                                                                       |  |  |        +**S.psammicola_Mnx
+|                                                                       |  +--| (92.8/98)
+|                                                                       |     +--D.melanogaster_Mnx_Exex
+|                                                                    +--| (89.9/93)
+|                                                                    |  |                                    +--A.agile_Ro_
+|                                                                    |  |                                 +--| (77.6/100)
+|                                                                    |  |                                 |  +--I.pulchra_Ro_
+|                                                                    |  |                              +--| (85.2/100)
+|                                                                    |  |                              |  |  +--E.macrobursalium_Ro_
+|                                                                    |  |                              |  +--| (91.1/100)
+|                                                                    |  |                              |     +--S.roscoffensis_Ro_
+|                                                                    |  |                           +--| (95.5/95)
+|                                                                    |  |                           |  +--H.miamia_Ro2_
+|                                                                    |  |                        +--| (74.6/88)
+|                                                                    |  |                        |  +**X.bocki_G_Ro_
+|                                                                    |  |                     +--| (85.7/90)
+|                                                                    |  |                     |  +--B.lanceolatum_Rough-like_
+|                                                                    |  |                  +--| (74.8/93)
+|                                                                    |  |                  |  +--S.purpuratus_HB1-like
+|                                                                    |  |               +--| (81.3/55)
+|                                                                    |  |               |  |  +--D.gymnopharyngeus_Ro_
+|                                                                    |  |               |  +--| (35/54)
+|                                                                    |  |               |     +--H.asinina_Rough-like_
+|                                                                    |  |            +**| (0/48)
+|                                                                    |  |            |  +--M.stichopi_Ro_
+|                                                                    |  |         +--| (1.91/28)
+|                                                                    |  |         |  |           +--------C.elegans_Ro
+|                                                                    |  |         |  |        +--| (79.9/54)
+|                                                                    |  |         |  |        |  +----H.miamia_Ro1_
+|                                                                    |  |         |  |     +--| (85.7/53)
+|                                                                    |  |         |  |     |  +--H.leucospilota_Rough_
+|                                                                    |  |         |  |  +--| (69.1/79)
+|                                                                    |  |         |  |  |  +--N.westbladi_Ro_
+|                                                                    |  |         |  +--| (91.7/57)
+|                                                                    |  |         |     +**D.melanogaster_Rough_
+|                                                                    |  |  +------| (99/99)
+|                                                                    |  |  |      +--N.vectensis_Ro_
+|                                                                    |  +--| (78.5/60)
+|                                                                    |     |     +**B.floridae_Gbx
+|                                                                    |     |  +--| (78.3/99)
+|                                                                    |     |  |  |  +**D.melanogaster_Gbx_Unpg
+|                                                                    |     |  |  +--| (79.2/99)
+|                                                                    |     |  |     |  +--S.purpuratus_Gbx_Unpg
+|                                                                    |     |  |     +--| (84.8/100)
+|                                                                    |     |  |        +--X.bocki_Gbx_
+|                                                                    |     +--| (92.3/98)
+|                                                                    |        +---------N.westbladi_P_Gbx
+|                                                                 +--| (76.1/88)
+|                                                                 |  |                    +--A.virescens_AntHox
+|                                                                 |  |                 +**| (0/42)
+|                                                                 |  |                 |  |  +**X.bocki_AntHox
+|                                                                 |  |                 |  +--| (84.6/100)
+|                                                                 |  |                 |     +**X.profunda_AntHox
+|                                                                 |  |              +--| (44.3/42)
+|                                                                 |  |              |  |           +**C.longifissura_AntHox
+|                                                                 |  |              |  |        +**| (0/96)
+|                                                                 |  |              |  |        |  +**S.roscoffensis_Hox1
+|                                                                 |  |              |  |     +--| (92/100)
+|                                                                 |  |              |  |     |  +--P.naikaiensis_G_AntHox
+|                                                                 |  |              |  |  +--| (74.1/52)
+|                                                                 |  |              |  |  |  +**I.pulchra_AntHox
+|                                                                 |  |              |  +--| (89.4/89)
+|                                                                 |  |              |     |     +--D.longitubus_AntHox
+|                                                                 |  |              |     |  +**| (0/82)
+|                                                                 |  |              |     |  |  |  +--M.stichopi_AntHox
+|                                                                 |  |              |     |  |  +--| (83.4/95)
+|                                                                 |  |              |     |  |     +--N.westbladi_AntHox
+|                                                                 |  |              |     +**| (0/36)
+|                                                                 |  |              |        +**H.miamia_AntHox
+|                                                                 |  |           +**| (0/77)
+|                                                                 |  |           |  |  +**P.karlingi_AntHox
+|                                                                 |  |           |  +--| (90.4/100)
+|                                                                 |  |           |     +**P.rhammifera_AntHox
+|                                                                 |  |        +--| (36.9/42)
+|                                                                 |  |        |  |              +**B.floridae_Hox1
+|                                                                 |  |        |  |           +--| (85.5/97)
+|                                                                 |  |        |  |           |  +-----C.elegans_Hox1_ceh13
+|                                                                 |  |        |  |        +--| (86.4/93)
+|                                                                 |  |        |  |        |  +--S.purpuratus_HoxB1
+|                                                                 |  |        |  |     +**| (0/77)
+|                                                                 |  |        |  |     |  |  +--C.telata_Hox1_labial
+|                                                                 |  |        |  |     |  +**| (0/78)
+|                                                                 |  |        |  |     |     +**P.caudatus_Lab
+|                                                                 |  |        |  |  +--| (83.9/95)
+|                                                                 |  |        |  |  |  +**L.gigantea_Hox1_labial
+|                                                                 |  |        |  +--| (86.3/95)
+|                                                                 |  |        |     +--D.melanogaster_Hox1_lab
+|                                                                 |  |     +--| (63.7/96)
+|                                                                 |  |     |  +--D.gymnopharyngeus_AntHox
+|                                                                 |  |  +--| (95/100)
+|                                                                 |  |  |  +--P.rubra_AntHox
+|                                                                 |  +--| (90/99)
+|                                                                 |     +---N.vectensis_AnthozoanHox6
+|                                                              +--| (87.1/98)
+|                                                              |  |                   +--A.virescens_Mox
+|                                                              |  |                +--| (85.9/79)
+|                                                              |  |                |  +-------N.gullmarensis_Mox
+|                                                              |  |             +--| (70.8/93)
+|                                                              |  |             |  |  +**H.lactomaculata_Mox
+|                                                              |  |             |  +--| (92.8/80)
+|                                                              |  |             |     |           +**P.karlingi_Mox
+|                                                              |  |             |     +-----------| (100/100)
+|                                                              |  |             |                 +**P.rhammifera_Mox
+|                                                              |  |          +--| (0/70)
+|                                                              |  |          |  +--H.miamia_G_Mox_
+|                                                              |  |       +--| (71.9/88)
+|                                                              |  |       |  |           +--B.floridae_Mox
+|                                                              |  |       |  |        +--| (65.3/80)
+|                                                              |  |       |  |        |  +--S.purpuratus_Mox2
+|                                                              |  |       |  |     +--| (71.9/76)
+|                                                              |  |       |  |     |  +--P.caudatus_Mox2
+|                                                              |  |       |  |  +--| (75.1/64)
+|                                                              |  |       |  |  |  |           +--D.melanogaster_Meox_Btn
+|                                                              |  |       |  |  |  |        +--| (76.7/94)
+|                                                              |  |       |  |  |  |        |  +--N.vectensis_MoxC
+|                                                              |  |       |  |  |  |     +--| (77.5/85)
+|                                                              |  |       |  |  |  |     |  +**N.vectensis_MoxD
+|                                                              |  |       |  |  |  |  +--| (78.5/81)
+|                                                              |  |       |  |  |  |  |  +--N.vectensis_MoxA
+|                                                              |  |       |  |  |  +--| (64.9/72)
+|                                                              |  |       |  |  |     |     +--M.stichopi_Mox
+|                                                              |  |       |  |  |     |  +--| (88/93)
+|                                                              |  |       |  |  |     |  |  +--N.westbladi_P_Mox
+|                                                              |  |       |  |  |     +**| (0/64)
+|                                                              |  |       |  |  |        +**N.vectensis_MoxB
+|                                                              |  |       |  +--| (72.7/81)
+|                                                              |  |       |     +--X.bocki_Mox
+|                                                              |  |  +----| (97.6/99)
+|                                                              |  |  |    +----I.pulchra_Mox
+|                                                              |  +**| (0/53)
+|                                                              |     +--------N.vectensis_HD117
+|                                                           +**| (0/60)
+|                                                           |  |  +--B.floridae_Hox2
+|                                                           |  +--| (72.3/98)
+|                                                           |     +---S.purpuratus_HoxA2-like
+|                                                        +--| (80.4/96)
+|                                                        |  +**P.caudatus_Hox2_Pb
+|                                                     +--| (89.5/97)
+|                                                     |  |     +--C.telata_Hox2_Pb
+|                                                     |  |  +--| (88.4/100)
+|                                                     |  |  |  +--D.melanogaster_Hox2_pb
+|                                                     |  +--| (83.2/98)
+|                                                     |     +**L.gigantea_Hox2_pb
+|                                                  +--| (68.6/94)
+|                                                  |  |                                                                         +**A.virescens_PostHox
+|                                                  |  |                                                                      +--| (87.2/99)
+|                                                  |  |                                                                      |  +--N.sp2_PostHox
+|                                                  |  |                                                                   +--| (0/58)
+|                                                  |  |                                                                   |  +--P.variabilis_PostHox
+|                                                  |  |                                                                +**| (0/88)
+|                                                  |  |                                                                |  +**F.glomerata_PostHox
+|                                                  |  |                                                             +--| (77.6/90)
+|                                                  |  |                                                             |  +**I.pulchra_PostHox
+|                                                  |  |                                                          +--| (79.7/91)
+|                                                  |  |                                                          |  +--H.rubropunctata_PostHox
+|                                                  |  |                                                       +--| (77.8/91)
+|                                                  |  |                                                       |  |        +**C.longifissura_PostHox
+|                                                  |  |                                                       |  |     +**| (0/85)
+|                                                  |  |                                                       |  |     |  +**P.naikaiensis_G_PostHox
+|                                                  |  |                                                       |  |  +**| (0/6)
+|                                                  |  |                                                       |  |  |  |     +**P.karlingi_PostHox
+|                                                  |  |                                                       |  |  |  |  +--| (83.9/99)
+|                                                  |  |                                                       |  |  |  |  |  +**P.rhammifera_PostHox
+|                                                  |  |                                                       |  |  |  +**| (0/6)
+|                                                  |  |                                                       |  |  |     +--S.roscoffensis_PostHox
+|                                                  |  |                                                       |  +**| (0/66)
+|                                                  |  |                                                       |     +**N.fusca_PostHox
+|                                                  |  |                                                    +--| (79.8/91)
+|                                                  |  |                                                    |  |  +--D.gymnopharyngeus_PostHox
+|                                                  |  |                                                    |  +--| (94.8/99)
+|                                                  |  |                                                    |     +--D.longitubus_PostHox
+|                                                  |  |                                                 +--| (92.8/94)
+|                                                  |  |                                                 |  +--H.miamia_PostHox
+|                                                  |  |                                              +--| (77.1/68)
+|                                                  |  |                                              |  +**X.bocki_PostHox
+|                                                  |  |                                           +--| (94.3/89)
+|                                                  |  |                                           |  |                          +--B.floridae_Hox13
+|                                                  |  |                                           |  |                       +--| (77.2/37)
+|                                                  |  |                                           |  |                       |  |  +--B.floridae_Hox14
+|                                                  |  |                                           |  |                       |  +--| (77.8/38)
+|                                                  |  |                                           |  |                       |     |    +------C.telata_Post1
+|                                                  |  |                                           |  |                       |     +----| (93.9/94)
+|                                                  |  |                                           |  |                       |          +---L.gigantea_Post1
+|                                                  |  |                                           |  |                    +--| (94.2/99)
+|                                                  |  |                                           |  |                    |  |     +-----B.lanceolatum_Hox15
+|                                                  |  |                                           |  |                    |  |  +--| (87.8/99)
+|                                                  |  |                                           |  |                    |  |  |  +---S.sp9_PostHox
+|                                                  |  |                                           |  |                    |  +--| (36.8/39)
+|                                                  |  |                                           |  |                    |     +----------C.elegans_Hox91315_nob1
+|                                                  |  |                                           |  |                 +--| (65.6/95)
+|                                                  |  |                                           |  |                 |  |  +--C.telata_Post2
+|                                                  |  |                                           |  |                 |  +--| (90.1/100)
+|                                                  |  |                                           |  |                 |     +--L.gigantea_Post2
+|                                                  |  |                                           |  |              +--| (88.9/86)
+|                                                  |  |                                           |  |              |  |  +--C.elegans_Hox91315_php3
+|                                                  |  |                                           |  |              |  +--| (96.5/100)
+|                                                  |  |                                           |  |              |     |  +--D.melanogaster_Hox91315_AbdB
+|                                                  |  |                                           |  |              |     +--| (70.4/80)
+|                                                  |  |                                           |  |              |        +--P.caudatus_AbdB1
+|                                                  |  |                                           |  |           +**| (0/49)
+|                                                  |  |                                           |  |           |  +--P.rubra_PostHox1
+|                                                  |  |                                           |  |        +--| (87.6/60)
+|                                                  |  |                                           |  |        |  +--F.sp_PostHox
+|                                                  |  |                                           |  |     +--| (70.6/82)
+|                                                  |  |                                           |  |     |  |  +--M.stichopi_PostHox
+|                                                  |  |                                           |  |     |  +--| (50.6/58)
+|                                                  |  |                                           |  |     |     |   +-------P.caudatus_AbdB2
+|                                                  |  |                                           |  |     |     +---| (86/95)
+|                                                  |  |                                           |  |     |         +**P.rubra_PostHox2
+|                                                  |  |                                           |  |  +--| (78.2/83)
+|                                                  |  |                                           |  |  |  +--N.westbladi_PostHox2
+|                                                  |  |                                           |  +--| (60.8/50)
+|                                                  |  |                                           |     +--N.westbladi_G_PostHox1
+|                                                  |  |                                        +--| (84.8/69)
+|                                                  |  |                                        |  |        +--S.purpuratus_HD-protein
+|                                                  |  |                                        |  |     +**| (19/28)
+|                                                  |  |                                        |  |     |  |  +---------S.purpuratus_HoxA10-like
+|                                                  |  |                                        |  |     |  +--| (69.5/33)
+|                                                  |  |                                        |  |     |     +--S.purpuratus_HoxD9A
+|                                                  |  |                                        |  |  +--| (98.2/96)
+|                                                  |  |                                        |  |  |  +--S.purpuratus_HoxC9-like
+|                                                  |  |                                        |  +--| (76.7/96)
+|                                                  |  |                                        |     +--S.purpuratus_HoxA10
+|                                                  |  |                                     +--| (75.4/47)
+|                                                  |  |                                     |  +--B.floridae_Hox9
+|                                                  |  |                                  +--| (93.1/92)
+|                                                  |  |                                  |  |        +--B.floridae_Hox10
+|                                                  |  |                                  |  |     +--| (82.5/97)
+|                                                  |  |                                  |  |     |  +--B.floridae_Hox12
+|                                                  |  |                                  |  |  +--| (95.1/94)
+|                                                  |  |                                  |  |  |  +--B.floridae_Hox11
+|                                                  |  |                                  |  +**| (0/38)
+|                                                  |  |                                  |     +--S.psammicola_PostHox
+|                                                  |  |                             +----| (98.5/97)
+|                                                  |  |                             |    +**S.purpuratus_HoxB9
+|                                                  |  |                          +--| (75.5/92)
+|                                                  |  |                          |  |    +**X.bocki_CentHox1
+|                                                  |  |                          |  +----| (99/100)
+|                                                  |  |                          |       +--X.profunda_CentHox1
+|                                                  |  |                       +--| (89.2/91)
+|                                                  |  |                       |  |        +**C.longifissura_CentHox
+|                                                  |  |                       |  |     +**| (0/81)
+|                                                  |  |                       |  |     |  +**S.roscoffensis_CentHox
+|                                                  |  |                       |  |  +--| (84.4/95)
+|                                                  |  |                       |  |  |  +--I.pulchra_CentHox
+|                                                  |  |                       |  +**| (0/70)
+|                                                  |  |                       |     +**P.naikaiensis_G_CentHox
+|                                                  |  |                    +**| (0/69)
+|                                                  |  |                    |  |  +--D.gymnopharyngeus_CentHox
+|                                                  |  |                    |  +--| (74.3/90)
+|                                                  |  |                    |     +--H.miamia_CentHox
+|                                                  |  |                 +**| (0/47)
+|                                                  |  |                 |  |           +--B.floridae_Hox4
+|                                                  |  |                 |  |        +--| (75.1/92)
+|                                                  |  |                 |  |        |  |  +--C.elegans_Hox4_lin39
+|                                                  |  |                 |  |        |  +--| (89.9/97)
+|                                                  |  |                 |  |        |     |  +**X.bocki_CentHox3
+|                                                  |  |                 |  |        |     +--| (65.5/98)
+|                                                  |  |                 |  |        |        +**X.profunda_CentHox3
+|                                                  |  |                 |  |     +--| (76.2/89)
+|                                                  |  |                 |  |     |  |    +--M.stichopi_CentHox
+|                                                  |  |                 |  |     |  +----| (99.4/100)
+|                                                  |  |                 |  |     |       +**N.westbladi_G_CentHox
+|                                                  |  |                 |  |  +**| (0/58)
+|                                                  |  |                 |  |  |  |              +--B.floridae_Hox6
+|                                                  |  |                 |  |  |  |           +--| (71/78)
+|                                                  |  |                 |  |  |  |           |  +--S.purpuratus_HoxHB1
+|                                                  |  |                 |  |  |  |        +--| (89.1/82)
+|                                                  |  |                 |  |  |  |        |  |     +--B.floridae_Hox7
+|                                                  |  |                 |  |  |  |        |  |  +--| (91.2/91)
+|                                                  |  |                 |  |  |  |        |  |  |  |                    +--B.floridae_Hox8
+|                                                  |  |                 |  |  |  |        |  |  |  |                 +--| (23.8/69)
+|                                                  |  |                 |  |  |  |        |  |  |  |                 |  |  +**C.telata_Lox4
+|                                                  |  |                 |  |  |  |        |  |  |  |                 |  +--| (92.6/100)
+|                                                  |  |                 |  |  |  |        |  |  |  |                 |     +--L.gigantea_Hox7_Lox4
+|                                                  |  |                 |  |  |  |        |  |  |  |              +--| (77.5/79)
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |           +**C.telata_Lox2
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |        +--| (97.4/100)
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |        |  +--L.gigantea_Lox2
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |     +--| (84.2/99)
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |     |  +--P.caudatus_Ubx
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |  +--| (80.1/99)
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  |  |  +--D.melanogaster_Hox68_Ubx
+|                                                  |  |                 |  |  |  |        |  |  |  |              |  +--| (74.3/99)
+|                                                  |  |                 |  |  |  |        |  |  |  |              |     +--D.melanogaster_Hox68_AbdA
+|                                                  |  |                 |  |  |  |        |  |  |  |           +**| (0/72)
+|                                                  |  |                 |  |  |  |        |  |  |  |           |  +----C.elegans_Hox68_mab5
+|                                                  |  |                 |  |  |  |        |  |  |  |        +**| (0/70)
+|                                                  |  |                 |  |  |  |        |  |  |  |        |  +**L.gigantea_Hox7_Antp
+|                                                  |  |                 |  |  |  |        |  |  |  |     +--| (76/80)
+|                                                  |  |                 |  |  |  |        |  |  |  |     |  |  +--P.caudatus_Hox6_HB3_ANTP
+|                                                  |  |                 |  |  |  |        |  |  |  |     |  +--| (85.8/93)
+|                                                  |  |                 |  |  |  |        |  |  |  |     |     +**P.caudatus_Hox7_HB2_ANTP
+|                                                  |  |                 |  |  |  |        |  |  |  |  +**| (0/79)
+|                                                  |  |                 |  |  |  |        |  |  |  |  |  +--S.purpuratus_HoxA7_2
+|                                                  |  |                 |  |  |  |        |  |  |  +**| (0/71)
+|                                                  |  |                 |  |  |  |        |  |  |     |  +**C.telata_ANTP2
+|                                                  |  |                 |  |  |  |        |  |  |     +**| (0/81)
+|                                                  |  |                 |  |  |  |        |  |  |        +**D.melanogaster_Hox68_ANTP
+|                                                  |  |                 |  |  |  |        |  +**| (0/28)
+|                                                  |  |                 |  |  |  |        |     |     +---------------C.elegans_Hox68_egl5
+|                                                  |  |                 |  |  |  |        |     |  +--| (58.4/74)
+|                                                  |  |                 |  |  |  |        |     |  |  +--S.purpuratus_HoxA7_1
+|                                                  |  |                 |  |  |  |        |     +**| (0/32)
+|                                                  |  |                 |  |  |  |        |        |  +**X.bocki_CentHox2
+|                                                  |  |                 |  |  |  |        |        +--| (74.2/99)
+|                                                  |  |                 |  |  |  |        |           +**X.profunda_CentHox2
+|                                                  |  |                 |  |  |  |     +--| (84.3/97)
+|                                                  |  |                 |  |  |  |     |  |  +--C.telata_Lox5
+|                                                  |  |                 |  |  |  |     |  +**| (0/73)
+|                                                  |  |                 |  |  |  |     |     +--L.gigantea_Lox5
+|                                                  |  |                 |  |  |  |  +--| (85.8/91)
+|                                                  |  |                 |  |  |  |  |  +--D.melanogaster_Hox68_Ftz
+|                                                  |  |                 |  |  |  +**| (0/51)
+|                                                  |  |                 |  |  |     |           +--B.lanceolatum_Hox5
+|                                                  |  |                 |  |  |     |        +**| (57.6/73)
+|                                                  |  |                 |  |  |     |        |  |              +**C.telata_Dfd
+|                                                  |  |                 |  |  |     |        |  |           +**| (0/89)
+|                                                  |  |                 |  |  |     |        |  |           |  |  +--D.melanogaster_Hox4_Dfd
+|                                                  |  |                 |  |  |     |        |  |           |  +--| (80.8/93)
+|                                                  |  |                 |  |  |     |        |  |           |     |  +**F.sp_CentHox
+|                                                  |  |                 |  |  |     |        |  |           |     +--| (63.1/94)
+|                                                  |  |                 |  |  |     |        |  |           |        +--------N.vectensis_HD065
+|                                                  |  |                 |  |  |     |        |  |        +--| (63.7/91)
+|                                                  |  |                 |  |  |     |        |  |        |  +--L.gigantea_Hox4_Dfd
+|                                                  |  |                 |  |  |     |        |  |     +--| (55.1/70)
+|                                                  |  |                 |  |  |     |        |  |     |  +**N.sp2_CentHox
+|                                                  |  |                 |  |  |     |        |  |  +--| (79.2/98)
+|                                                  |  |                 |  |  |     |        |  |  |  +**P.caudatus_Hox4_Dfd
+|                                                  |  |                 |  |  |     |        |  +--| (87.4/84)
+|                                                  |  |                 |  |  |     |        |     |  +**C.telata_Scr
+|                                                  |  |                 |  |  |     |        |     +--| (88.4/97)
+|                                                  |  |                 |  |  |     |        |        +--L.gigantea_Hox5_Scr
+|                                                  |  |                 |  |  |     |     +**| (0/71)
+|                                                  |  |                 |  |  |     |     |  +--D.melanogaster_Hox5_Scr
+|                                                  |  |                 |  |  |     |  +--| (49.6/83)
+|                                                  |  |                 |  |  |     |  |  +--P.caudatus_Scr
+|                                                  |  |                 |  |  |     +--| (86.1/83)
+|                                                  |  |                 |  |  |        +--S.purpuratus_HoxA5
+|                                                  |  |                 |  +--| (0/74)
+|                                                  |  |                 |     +**D.longitubus_CentHox
+|                                                  |  |              +--| (83.4/91)
+|                                                  |  |              |  +--P.karlingi_CentHox
+|                                                  |  |           +--| (88.2/96)
+|                                                  |  |           |  +**P.rubra_CentHox
+|                                                  |  |        +--| (75.4/97)
+|                                                  |  |        |  |  +--N.vectensis_AnthozoanHox1
+|                                                  |  |        |  +--| (91.8/99)
+|                                                  |  |        |     +--N.vectensis_AnthozoanHox1A
+|                                                  |  |     +--| (86.1/97)
+|                                                  |  |     |  |        +--B.floridae_Xlox
+|                                                  |  |     |  |     +--| (84.7/100)
+|                                                  |  |     |  |     |  +**S.purpuratus_Xlox
+|                                                  |  |     |  |  +--| (87.3/100)
+|                                                  |  |     |  |  |  +**L.gigantea_Xlox
+|                                                  |  |     |  +--| (92.1/100)
+|                                                  |  |     |     |  +--C.telata_Xlox
+|                                                  |  |     |     +--| (9/97)
+|                                                  |  |     |        +---P.caudatus_Xlox
+|                                                  |  |  +--| (80.5/96)
+|                                                  |  |  |  |           +**B.floridae_Hox3
+|                                                  |  |  |  |        +--| (85.3/99)
+|                                                  |  |  |  |        |  |  +--T.castaneum_Hox3_zen1
+|                                                  |  |  |  |        |  +--| (96.6/100)
+|                                                  |  |  |  |        |     +--T.castaneum_Hox3_zen2
+|                                                  |  |  |  |     +**| (26.3/81)
+|                                                  |  |  |  |     |  +--S.purpuratus_HoxA3
+|                                                  |  |  |  |  +**| (0/62)
+|                                                  |  |  |  |  |  |  +**C.telata_Hox3
+|                                                  |  |  |  |  |  +--| (81.8/98)
+|                                                  |  |  |  |  |     +--L.goshimai_Hox3
+|                                                  |  |  |  +--| (84.5/99)
+|                                                  |  |  |     +**P.caudatus_Hox3
+|                                                  |  +--| (80.3/96)
+|                                                  |     |              +--B.floridae_Gsx
+|                                                  |     |           +--| (89.1/97)
+|                                                  |     |           |  +--C.telata_Gsx
+|                                                  |     |        +--| (73.6/91)
+|                                                  |     |        |  +**S.purpuratus_Gsx_HB1
+|                                                  |     |     +**| (0/59)
+|                                                  |     |     |  |              +--D.longitubus_Gsx
+|                                                  |     |     |  |           +--| (62.3/82)
+|                                                  |     |     |  |           |  +--H.miamia_Gsx
+|                                                  |     |     |  |        +--| (92.2/100)
+|                                                  |     |     |  |        |  |        +--I.pulchra_Gsx
+|                                                  |     |     |  |        |  |     +--| (98/99)
+|                                                  |     |     |  |        |  |     |  +--P.variabilis_Gsx
+|                                                  |     |     |  |        |  |  +--| (51.1/97)
+|                                                  |     |     |  |        |  |  |  +**P.naikaiensis_G_Gsx
+|                                                  |     |     |  |        |  +--| (86.2/98)
+|                                                  |     |     |  |        |     +--S.roscoffensis_Gsx
+|                                                  |     |     |  |     +--| (94.1/100)
+|                                                  |     |     |  |     |  +--X.bocki_G_Gsx2_
+|                                                  |     |     |  |  +--| (41.9/62)
+|                                                  |     |     |  |  |  +--D.melanogaster_Ind_Gsx
+|                                                  |     |     |  +--| (75.2/69)
+|                                                  |     |     |     |  +**X.bocki_G_Gsx1_
+|                                                  |     |     |     +--| (73.4/87)
+|                                                  |     |     |        +**X.profunda_Gsx
+|                                                  |     |  +--| (97.3/99)
+|                                                  |     |  |  +--L.gigantea_Gsx
+|                                                  |     +--| (98/100)
+|                                                  |        +--N.vectensis_Gsx
+|                                               +--| (87.3/97)
+|                                               |  |  +--N.vectensis_AnthozoanHox7
+|                                               |  +--| (94.4/100)
+|                                               |     |  +**N.vectensis_AnthozoanHox8A
+|                                               |     +--| (74.3/100)
+|                                               |        +**N.vectensis_AnthozoanHox8B
+|                                      +--------| (99.9/100)
+|                                      |        +--N.vectensis_AnthozoanHox6A
+|                                   +--| (77.1/97)
+|                                   |  +**L.gigantea_Cdx
+|                                +--| (41.4/94)
+|                                |  +--N.sp2_Cdx1
+|                             +--| (77.1/96)
+|                             |  +--P.caudatus_Cdx_Caudal
+|                          +--| (84.3/99)
+|                          |  |  +------C.elegans_Cdx_pal1
+|                          |  +**| (23.5/96)
+|                          |     |  +--C.telata_Caudal
+|                          |     +--| (7.43/96)
+|                          |        +--D.melanogaster_Cdx_cad
+|                       +--| (84.6/88)
+|                       |  +--S.purpuratus_Cdx
+|                    +--| (97.5/99)
+|                    |  +--B.floridae_Cdx
+|                 +--| (74.2/75)
+|                 |  +--N.westbladi_P_Cdx
+|              +--| (73.8/75)
+|              |  +--M.stichopi_Cdx
+|           +--| (90.9/87)
+|           |  |  +**X.bocki_G_Cdx
+|           |  +--| (76.2/100)
+|           |     +**X.profunda_Cdx
+|        +--| (82.8/91)
+|        |  +**D.gymnopharyngeus_Cdx_
+|     +--| (84.7/97)
+|     |  |  +--H.miamia_Cdx
+|     |  +--| (37/66)
+|     |     |  +--P.rubra_Cdx1
+|     |     +--| (88/100)
+|     |        +**P.rubra_Cdx2
+|  +**| (0/83)
+|  |  |     +**I.pulchra_Cdx
+|  |  |  +**| (0/91)
+|  |  |  |  +**P.naikaiensis_Cdx
+|  |  +**| (0/87)
+|  |     +--M.sp14_Cdx
++**| (0/61)
+|  +**P.rhammifera_Cdx
+|
+|  +**A.virescens_Cdx
++**| (0/48)
+   +--P.karlingi_Cdx
+
+Tree in newick format:
+
+(A.agile_Cdx:0.0000020262,((((((((((((((((((((((((((((((A.agile_Evx_:0.0000024611,P.variabilis_Evx:0.0000025834)74.9/100:0.0818981070,I.pulchra_Evx:0.0573143042)0/93:0.0438839783,((D.longitubus_Evx:0.1159105616,P.rubra_Evx:0.1297817326)0/87:0.0000021109,H.miamia_Evx:0.1346647831)93.2/97:0.1007563034)45.3/94:0.0190654474,(P.naikaiensis_G_Evx:0.0000024478,S.roscoffensis_Evx:0.0225372598)88.9/100:0.0831177788)96.3/98:0.2298088324,(B.floridae_EvxA:0.0000024787,((((C.elegans_Evx_vab7:0.3196823251,S.purpuratus_Evx:0.0057195362)49.9/94:0.0504044864,(N.vectensis_Evx:0.2490607841,((N.westbladi_Evx2:0.0838956230,N.westbladi_P_Evx1:0.0329537947)96.4/100:0.1715349887,S.psammicola_Evx:0.0648983103)0/95:0.0000025342)88.8/99:0.0932107360)87.6/97:0.0999967778,X.bocki_G_Evx__SPLICED:0.0796147987)26.4/71:0.0200544724,(D.melanogaster_Evx_eve:0.0293353609,P.caudatus_Evx:0.0897339342)76.7/93:0.0285389144)84.7/79:0.0361578686)90.1/95:0.1132997332)77/96:0.0586984169,B.floridae_EvxB:0.0256594196)98.8/100:0.7470915887,C.elegans_Mnx_ceh12:0.4586552719)23.6/35:0.3219621490,((B.floridae_Mnx:0.0384532816,((((((D.gymnopharyngeus_Mnx:0.0000029598,H.miamia_Mnx:0.0000020262)0/99:0.0000027701,(N.sp2_Mnx:0.0573397046,X.bocki_G_Mnx_:0.0943383362)77/82:0.0279090156)77.3/81:0.0281210523,I.pulchra_Mnx:0.0289485403)78.5/82:0.0474301043,(P.rhammifera_Mnx:0.0000020262,S.roscoffensis_Mnx:0.0000029267)2.45/95:0.0154344852)92.8/91:0.0969418584,(N.westbladi_Mnx:0.6664279026,S.purpuratus_MN_P:0.0000023300)0/79:0.0000021271)31.6/85:0.0684292050,(M.stichopi_Mnx:0.0000022470,S.psammicola_Mnx:0.0000020262)87.8/100:0.1767306478)27.7/78:0.0235878705)77.4/95:0.0534201109,D.melanogaster_Mnx_Exex:0.0299696511)92.8/98:0.2736636639)0/25:0.0000025170,(((((((((((A.agile_Ro_:0.0899795406,I.pulchra_Ro_:0.1567866490)77.6/100:0.0897037803,(E.macrobursalium_Ro_:0.0632120929,S.roscoffensis_Ro_:0.1488883993)91.1/100:0.1599536341)85.2/100:0.1056941891,H.miamia_Ro2_:0.1937334989)95.5/95:0.2120341864,X.bocki_G_Ro_:0.0000029756)74.6/88:0.0244706607,B.lanceolatum_Rough-like_:0.0709038579)85.7/90:0.0476519359,S.purpuratus_HB1-like:0.0771651442)74.8/93:0.0409508728,(D.gymnopharyngeus_Ro_:0.2435179876,H.asinina_Rough-like_:0.2139049522)35/54:0.1005184891)81.3/55:0.0674336426,M.stichopi_Ro_:0.0503847359)0/48:0.0000024276,((((C.elegans_Ro:1.1118853000,H.miamia_Ro1_:0.6367476553)79.9/54:0.3581058343,H.leucospilota_Rough_:0.3397328295)85.7/53:0.2174800435,N.westbladi_Ro_:0.1990379351)69.1/79:0.2163316147,D.melanogaster_Rough_:0.0000024457)91.7/57:0.2130377915)1.91/28:0.1593539658,N.vectensis_Ro_:0.1036568255)99/99:0.8085455388,((B.floridae_Gbx:0.0142089184,(D.melanogaster_Gbx_Unpg:0.0000027484,(S.purpuratus_Gbx_Unpg:0.3476430069,X.bocki_Gbx_:0.1157690628)84.8/100:0.0878508308)79.2/99:0.1058218457)78.3/99:0.0939495573,N.westbladi_P_Gbx:1.1526394504)92.3/98:0.3429815578)78.5/60:0.1077114938)89.9/93:0.2662820154,(((((((A.virescens_AntHox:0.0217728250,(X.bocki_AntHox:0.0000022552,X.profunda_AntHox:0.0000022506)84.6/100:0.0224294424)0/42:0.0000022289,((((C.longifissura_AntHox:0.0000028700,S.roscoffensis_Hox1:0.0000021763)0/96:0.0000024508,P.naikaiensis_G_AntHox:0.0229765285)92/100:0.0474591506,I.pulchra_AntHox:0.0000022432)74.1/52:0.0231204855,((D.longitubus_AntHox:0.1099540752,(M.stichopi_AntHox:0.0749064331,N.westbladi_AntHox:0.1043061026)83.4/95:0.0722487786)0/82:0.0000024357,H.miamia_AntHox:0.0000029015)0/36:0.0000023204)89.4/89:0.0467722864)44.3/42:0.0225199933,(P.karlingi_AntHox:0.0000023687,P.rhammifera_AntHox:0.0000020062)90.4/100:0.0488977638)0/77:0.0000022663,(((((B.floridae_Hox1:0.0000020257,C.elegans_Hox1_ceh13:0.7926540887)85.5/97:0.1660137076,S.purpuratus_HoxB1:0.1254822318)86.4/93:0.0562599995,(C.telata_Hox1_labial:0.0266018036,P.caudatus_Lab:0.0000020262)0/78:0.0000026487)0/77:0.0000025340,L.gigantea_Hox1_labial:0.0000022761)83.9/95:0.0680325391,D.melanogaster_Hox1_lab:0.1481936396)86.3/95:0.0845532601)36.9/42:0.0389491458,D.gymnopharyngeus_AntHox:0.0347546098)63.7/96:0.0890857757,P.rubra_AntHox:0.0394739888)95/100:0.3081264441,N.vectensis_AnthozoanHox6:0.5551827216)90/99:0.2496249901)76.1/88:0.0759322699,((((((A.virescens_Mox:0.2348499100,N.gullmarensis_Mox:0.9312401881)85.9/79:0.2903506076,(H.lactomaculata_Mox:0.0000022775,(P.karlingi_Mox:0.0000029780,P.rhammifera_Mox:0.0000028512)100/100:1.3637452790)92.8/80:0.3497241618)70.8/93:0.1201343951,H.miamia_G_Mox_:0.1520446468)0/70:0.0309797378,((((B.floridae_Mox:0.0763850624,S.purpuratus_Mox2:0.1472933262)65.3/80:0.0473950722,P.caudatus_Mox2:0.1435230616)71.9/76:0.0406423549,((((D.melanogaster_Meox_Btn:0.3766831331,N.vectensis_MoxC:0.2093369633)76.7/94:0.0398118157,N.vectensis_MoxD:0.0139226832)77.5/85:0.0326070729,N.vectensis_MoxA:0.0480407600)78.5/81:0.0438513457,((M.stichopi_Mox:0.3152512692,N.westbladi_P_Mox:0.3798774456)88/93:0.2703379724,N.vectensis_MoxB:0.0000025527)0/64:0.0000023536)64.9/72:0.0563029564)75.1/64:0.0531778307,X.bocki_Mox:0.1090811193)72.7/81:0.1793257181)71.9/88:0.1476305341,I.pulchra_Mox:0.6504671849)97.6/99:0.6532543441,N.vectensis_HD117:1.1001872860)0/53:0.0000025760)87.1/98:0.1028125521,(B.floridae_Hox2:0.3279841087,S.purpuratus_HoxA2-like:0.4668948596)72.3/98:0.0687003774)0/60:0.0000023230,P.caudatus_Hox2_Pb:0.0000023951)80.4/96:0.0590299139,((C.telata_Hox2_Pb:0.0184743334,D.melanogaster_Hox2_pb:0.0211901758)88.4/100:0.0581307050,L.gigantea_Hox2_pb:0.0000025788)83.2/98:0.0740949618)89.5/97:0.1586695230,((((((((((((((((((((((((A.virescens_PostHox:0.0000020262,N.sp2_PostHox:0.0375248912)87.2/99:0.0509585940,P.variabilis_PostHox:0.1007544714)0/58:0.0207424730,F.glomerata_PostHox:0.0000023850)0/88:0.0000020847,I.pulchra_PostHox:0.0000021266)77.6/90:0.0363817994,H.rubropunctata_PostHox:0.1003102445)79.7/91:0.0408046855,(((C.longifissura_PostHox:0.0000020262,P.naikaiensis_G_PostHox:0.0000020262)0/85:0.0000025025,((P.karlingi_PostHox:0.0000020586,P.rhammifera_PostHox:0.0000022061)83.9/99:0.0219514172,S.roscoffensis_PostHox:0.0216421962)0/6:0.0000022431)0/6:0.0000022598,N.fusca_PostHox:0.0000023277)0/66:0.0000027159)77.8/91:0.0561577280,(D.gymnopharyngeus_PostHox:0.2363747890,D.longitubus_PostHox:0.1254316842)94.8/99:0.1998513692)79.8/91:0.0799345684,H.miamia_PostHox:0.0676202347)92.8/94:0.1230744260,X.bocki_PostHox:0.0000020458)77.1/68:0.0529710946,(((((((((B.floridae_Hox13:0.4094675970,(B.floridae_Hox14:0.1788426878,(C.telata_Post1:0.9041400636,L.gigantea_Post1:0.5233427424)93.9/94:0.6259326982)77.8/38:0.1288808887)77.2/37:0.1981578778,((B.lanceolatum_Hox15:0.7169053233,S.sp9_PostHox:0.4579490079)87.8/99:0.3808790515,C.elegans_Hox91315_nob1:1.2624245898)36.8/39:0.1001257234)94.2/99:0.4524773155,(C.telata_Post2:0.0609199701,L.gigantea_Post2:0.0977937869)90.1/100:0.2738744728)65.6/95:0.1632363864,(C.elegans_Hox91315_php3:0.2064742578,(D.melanogaster_Hox91315_AbdB:0.1568008728,P.caudatus_AbdB1:0.0741473114)70.4/80:0.0645386640)96.5/100:0.3384208512)88.9/86:0.1743591064,P.rubra_PostHox1:0.2838367875)0/49:0.0000021047,F.sp_PostHox:0.0811640109)87.6/60:0.1020657329,(M.stichopi_PostHox:0.0390434302,(P.caudatus_AbdB2:0.9225335301,P.rubra_PostHox2:0.0000023506)86/95:0.5318269710)50.6/58:0.0406008625)70.6/82:0.0184405951,N.westbladi_PostHox2:0.0226647080)78.2/83:0.0230874141,N.westbladi_G_PostHox1:0.0530375715)60.8/50:0.0199220784)94.3/89:0.1162987935,(((S.purpuratus_HD-protein:0.1385234274,(S.purpuratus_HoxA10-like:1.1843803499,S.purpuratus_HoxD9A:0.2345847734)69.5/33:0.0851539835)19/28:0.0138401656,S.purpuratus_HoxC9-like:0.2059543606)98.2/96:0.2805394491,S.purpuratus_HoxA10:0.1406118304)76.7/96:0.0583553423)84.8/69:0.0665977581,B.floridae_Hox9:0.1701070092)75.4/47:0.0349991339,(((B.floridae_Hox10:0.1172053379,B.floridae_Hox12:0.2554085672)82.5/97:0.0520750639,B.floridae_Hox11:0.0759834197)95.1/94:0.1454360062,S.psammicola_PostHox:0.1215662711)0/38:0.0058639464)93.1/92:0.1787172634,S.purpuratus_HoxB9:0.0000024147)98.5/97:0.6008846045,(X.bocki_CentHox1:0.0107787685,X.profunda_CentHox1:0.1911226500)99/100:0.6125737650)75.5/92:0.1305073447,(((C.longifissura_CentHox:0.0000020262,S.roscoffensis_CentHox:0.0000024657)0/81:0.0000025850,I.pulchra_CentHox:0.0321788320)84.4/95:0.0270070048,P.naikaiensis_G_CentHox:0.0000025204)0/70:0.0000028391)89.2/91:0.0803050278,(D.gymnopharyngeus_CentHox:0.0902794206,H.miamia_CentHox:0.0893246586)74.3/90:0.0468306296)0/69:0.0000020636,((((B.floridae_Hox4:0.0735826008,(C.elegans_Hox4_lin39:0.3289147680,(X.bocki_CentHox3:0.0000020262,X.profunda_CentHox3:0.0000020262)65.5/98:0.0330671936)89.9/97:0.1383137807)75.1/92:0.0333614351,(M.stichopi_CentHox:0.2811028061,N.westbladi_G_CentHox:0.0000021260)99.4/100:0.5933489300)76.2/89:0.0272553804,(((((B.floridae_Hox6:0.0729683980,S.purpuratus_HoxHB1:0.1488354621)71/78:0.0325942422,((B.floridae_Hox7:0.0252746150,(((((((B.floridae_Hox8:0.0578121359,(C.telata_Lox4:0.0000020486,L.gigantea_Hox7_Lox4:0.0494426329)92.6/100:0.0824547405)23.8/69:0.0244106223,((((C.telata_Lox2:0.0000025571,L.gigantea_Lox2:0.0760091878)97.4/100:0.1515831447,P.caudatus_Ubx:0.0579824285)84.2/99:0.0504577125,D.melanogaster_Hox68_Ubx:0.0289880835)80.1/99:0.0460850214,D.melanogaster_Hox68_AbdA:0.0340357173)74.3/99:0.0278128704)77.5/79:0.0822057643,C.elegans_Hox68_mab5:0.6354336546)0/72:0.0000025851,L.gigantea_Hox7_Antp:0.0000025251)0/70:0.0000026196,(P.caudatus_Hox6_HB3_ANTP:0.0911764698,P.caudatus_Hox7_HB2_ANTP:0.0149033978)85.8/93:0.0689560975)76/80:0.0302472696,S.purpuratus_HoxA7_2:0.2183238137)0/79:0.0000029890,(C.telata_ANTP2:0.0000020262,D.melanogaster_Hox68_ANTP:0.0000020262)0/81:0.0000024100)0/71:0.0000022032)91.2/91:0.0278575384,((C.elegans_Hox68_egl5:1.8236228125,S.purpuratus_HoxA7_1:0.2309730817)58.4/74:0.1091239339,(X.bocki_CentHox2:0.0000020262,X.profunda_CentHox2:0.0000020262)74.2/99:0.1578477950)0/32:0.0000024967)0/28:0.0000025033)89.1/82:0.0550621891,(C.telata_Lox5:0.0805454628,L.gigantea_Lox5:0.0518019343)0/73:0.0000025293)84.3/97:0.0502241613,D.melanogaster_Hox68_Ftz:0.2078802138)85.8/91:0.0536319124,((((B.lanceolatum_Hox5:0.0259496930,(((((C.telata_Dfd:0.0000026484,(D.melanogaster_Hox4_Dfd:0.0966921514,(F.sp_CentHox:0.0111785480,N.vectensis_HD065:1.0876038612)63.1/94:0.1146732694)80.8/93:0.0555543122)0/89:0.0000021937,L.gigantea_Hox4_Dfd:0.0501595866)63.7/91:0.0707404367,N.sp2_CentHox:0.0000020327)55.1/70:0.0229744892,P.caudatus_Hox4_Dfd:0.0000024239)79.2/98:0.0232139121,(C.telata_Scr:0.0000025127,L.gigantea_Hox5_Scr:0.1159398267)88.4/97:0.0482919773)87.4/84:0.0488674711)57.6/73:0.0126748375,D.melanogaster_Hox5_Scr:0.1001393255)0/71:0.0025435749,P.caudatus_Scr:0.1116078217)49.6/83:0.0392635295,S.purpuratus_HoxA5:0.0245509698)86.1/83:0.0497768069)0/51:0.0000024959)0/58:0.0000026637,D.longitubus_CentHox:0.0000020262)0/74:0.0540216162)0/47:0.0000022344,P.karlingi_CentHox:0.0600349331)83.4/91:0.0264348061,P.rubra_CentHox:0.0000024828)88.2/96:0.1321805009,(N.vectensis_AnthozoanHox1:0.2526427503,N.vectensis_AnthozoanHox1A:0.1801449603)91.8/99:0.1895183298)75.4/97:0.0672569412,(((B.floridae_Xlox:0.0254894033,S.purpuratus_Xlox:0.0000022740)84.7/100:0.0259066262,L.gigantea_Xlox:0.0000020445)87.3/100:0.0961181303,(C.telata_Xlox:0.0914426977,P.caudatus_Xlox:0.5154556283)9/97:0.0312914087)92.1/100:0.1395690746)86.1/97:0.0683865784,((((B.floridae_Hox3:0.0000025789,(T.castaneum_Hox3_zen1:0.1630865247,T.castaneum_Hox3_zen2:0.1086212047)96.6/100:0.2635870055)85.3/99:0.0571258938,S.purpuratus_HoxA3:0.2364141543)26.3/81:0.0152359080,(C.telata_Hox3:0.0000024709,L.goshimai_Hox3:0.1220657467)81.8/98:0.0238678084)0/62:0.0000025211,P.caudatus_Hox3:0.0000028734)84.5/99:0.1069387853)80.5/96:0.1088423404,(((((B.floridae_Gsx:0.1015727941,C.telata_Gsx:0.0937496384)89.1/97:0.0863086781,S.purpuratus_Gsx_HB1:0.0000025929)73.6/91:0.0268512523,(((((D.longitubus_Gsx:0.0377523745,H.miamia_Gsx:0.4246876586)62.3/82:0.2599836154,(((I.pulchra_Gsx:0.0411439519,P.variabilis_Gsx:0.3068683494)98/99:0.4251788374,P.naikaiensis_G_Gsx:0.0000020553)51.1/97:0.1315300512,S.roscoffensis_Gsx:0.1633547341)86.2/98:0.2887375416)92.2/100:0.4037425345,X.bocki_G_Gsx2_:0.1999579660)94.1/100:0.4237710202,D.melanogaster_Ind_Gsx:0.0814949233)41.9/62:0.1672597665,(X.bocki_G_Gsx1_:0.0000020262,X.profunda_Gsx:0.0000020262)73.4/87:0.0271347634)75.2/69:0.0225778585)0/59:0.0000023114,L.gigantea_Gsx:0.0938883670)97.3/99:0.3753209942,N.vectensis_Gsx:0.0444847647)98/100:0.3510181744)80.3/96:0.0984561528)68.6/94:0.0554003788,(N.vectensis_AnthozoanHox7:0.3386244293,(N.vectensis_AnthozoanHox8A:0.0000020262,N.vectensis_AnthozoanHox8B:0.0000020262)74.3/100:0.0530589807)94.4/100:0.3060181283)87.3/97:0.2498007918,N.vectensis_AnthozoanHox6A:0.2226618236)99.9/100:1.1043223170,L.gigantea_Cdx:0.0000024829)77.1/97:0.0516370341,N.sp2_Cdx1:0.0878334076)41.4/94:0.0181968421,P.caudatus_Cdx_Caudal:0.0218239333)77.1/96:0.0312458357,(C.elegans_Cdx_pal1:0.8924676915,(C.telata_Caudal:0.3730585247,D.melanogaster_Cdx_cad:0.1578299831)7.43/96:0.0596154955)23.5/96:0.0122020648)84.3/99:0.0707412529,S.purpuratus_Cdx:0.0578663484)84.6/88:0.1217984236,B.floridae_Cdx:0.1723638004)97.5/99:0.3064498216,N.westbladi_P_Cdx:0.0503438680)74.2/75:0.0294172896,M.stichopi_Cdx:0.1001951493)73.8/75:0.0490015579,(X.bocki_G_Cdx:0.0000020262,X.profunda_Cdx:0.0000020262)76.2/100:0.0280026596)90.9/87:0.0853266656,D.gymnopharyngeus_Cdx_:0.0113905762)82.8/91:0.0655075720,(H.miamia_Cdx:0.0668437266,(P.rubra_Cdx1:0.3455802777,P.rubra_Cdx2:0.0000027773)88/100:0.1068860556)37/66:0.0198812052)84.7/97:0.0511395329,((I.pulchra_Cdx:0.0000020262,P.naikaiensis_Cdx:0.0000020262)0/91:0.0000022569,M.sp14_Cdx:0.0246749694)0/87:0.0000023427)0/83:0.0000029759,P.rhammifera_Cdx:0.0000020262)0/61:0.0000025935,(A.virescens_Cdx:0.0000020262,P.karlingi_Cdx:0.0286674406)0/48:0.0000025840);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 10000bootstrap trees
+Log-likelihood of consensus tree: -8757.872159
+Robinson-Foulds distance between ML tree and consensus tree: 18
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--A.agile_Cdx
+|
+|                                                                                                    +--A.agile_Evx_
+|                                                                                                 +--| (100)
+|                                                                                                 |  +--P.variabilis_Evx
+|                                                                                              +--| (93)
+|                                                                                              |  +--I.pulchra_Evx
+|                                                                                           +--| (94)
+|                                                                                           |  |     +--D.longitubus_Evx
+|                                                                                           |  |  +--| (87)
+|                                                                                           |  |  |  +--P.rubra_Evx
+|                                                                                           |  +--| (97)
+|                                                                                           |     +--H.miamia_Evx
+|                                                                                        +--| (98)
+|                                                                                        |  |  +--P.naikaiensis_G_Evx
+|                                                                                        |  +--| (100)
+|                                                                                        |     +--S.roscoffensis_Evx
+|                                                                                     +--| (96)
+|                                                                                     |  |  +--B.floridae_EvxA
+|                                                                                     |  +--| (95)
+|                                                                                     |     |           +--C.elegans_Evx_vab7
+|                                                                                     |     |        +--| (94)
+|                                                                                     |     |        |  +--S.purpuratus_Evx
+|                                                                                     |     |     +--| (97)
+|                                                                                     |     |     |  |  +--N.vectensis_Evx
+|                                                                                     |     |     |  +--| (99)
+|                                                                                     |     |     |     |     +--N.westbladi_Evx2
+|                                                                                     |     |     |     |  +--| (100)
+|                                                                                     |     |     |     |  |  +--N.westbladi_P_Evx1
+|                                                                                     |     |     |     +--| (95)
+|                                                                                     |     |     |        +--S.psammicola_Evx
+|                                                                                     |     |  +--| (71)
+|                                                                                     |     |  |  +--X.bocki_G_Evx__SPLICED
+|                                                                                     |     +--| (79)
+|                                                                                     |        |  +--D.melanogaster_Evx_eve
+|                                                                                     |        +--| (93)
+|                                                                                     |           +--P.caudatus_Evx
+|                                                                              +------| (100)
+|                                                                              |      +--B.floridae_EvxB
+|                                                                           +--| (35)
+|                                                                           |  +---C.elegans_Mnx_ceh12
+|                                                                        +--| (25)
+|                                                                        |  |     +--B.floridae_Mnx
+|                                                                        |  |  +--| (95)
+|                                                                        |  |  |  |                 +--D.gymnopharyngeus_Mnx
+|                                                                        |  |  |  |              +--| (99)
+|                                                                        |  |  |  |              |  +--H.miamia_Mnx
+|                                                                        |  |  |  |           +--| (81)
+|                                                                        |  |  |  |           |  |  +--N.sp2_Mnx
+|                                                                        |  |  |  |           |  +--| (82)
+|                                                                        |  |  |  |           |     +--X.bocki_G_Mnx_
+|                                                                        |  |  |  |        +--| (82)
+|                                                                        |  |  |  |        |  +--I.pulchra_Mnx
+|                                                                        |  |  |  |     +--| (91)
+|                                                                        |  |  |  |     |  |  +--P.rhammifera_Mnx
+|                                                                        |  |  |  |     |  +--| (95)
+|                                                                        |  |  |  |     |     +--S.roscoffensis_Mnx
+|                                                                        |  |  |  |  +--| (85)
+|                                                                        |  |  |  |  |  |  +-----N.westbladi_Mnx
+|                                                                        |  |  |  |  |  +--| (79)
+|                                                                        |  |  |  |  |     +--S.purpuratus_MN_P
+|                                                                        |  |  |  +--| (78)
+|                                                                        |  |  |     |  +--M.stichopi_Mnx
+|                                                                        |  |  |     +--| (100)
+|                                                                        |  |  |        +--S.psammicola_Mnx
+|                                                                        |  +--| (98)
+|                                                                        |     +--D.melanogaster_Mnx_Exex
+|                                                                     +--| (93)
+|                                                                     |  |                                   +--A.agile_Ro_
+|                                                                     |  |                                +--| (100)
+|                                                                     |  |                                |  +--I.pulchra_Ro_
+|                                                                     |  |                             +--| (100)
+|                                                                     |  |                             |  |  +--E.macrobursalium_Ro_
+|                                                                     |  |                             |  +--| (100)
+|                                                                     |  |                             |     +--S.roscoffensis_Ro_
+|                                                                     |  |                          +--| (95)
+|                                                                     |  |                          |  +--H.miamia_Ro2_
+|                                                                     |  |                       +--| (88)
+|                                                                     |  |                       |  +--X.bocki_G_Ro_
+|                                                                     |  |                    +--| (90)
+|                                                                     |  |                    |  +--B.lanceolatum_Rough-like_
+|                                                                     |  |                 +--| (93)
+|                                                                     |  |                 |  +--S.purpuratus_HB1-like
+|                                                                     |  |              +--| (55)
+|                                                                     |  |              |  |  +--D.gymnopharyngeus_Ro_
+|                                                                     |  |              |  +--| (54)
+|                                                                     |  |              |     +--H.asinina_Rough-like_
+|                                                                     |  |           +--| (48)
+|                                                                     |  |           |  +--M.stichopi_Ro_
+|                                                                     |  |  +--------| (99)
+|                                                                     |  |  |        |              +---------C.elegans_Ro
+|                                                                     |  |  |        |           +--| (54)
+|                                                                     |  |  |        |           |  +-----H.miamia_Ro1_
+|                                                                     |  |  |        |        +--| (53)
+|                                                                     |  |  |        |        |  +--H.leucospilota_Rough_
+|                                                                     |  |  |        |     +--| (79)
+|                                                                     |  |  |        |     |  +--N.westbladi_Ro_
+|                                                                     |  |  |        |  +--| (57)
+|                                                                     |  |  |        |  |  +--D.melanogaster_Rough_
+|                                                                     |  |  |        +--| (33)
+|                                                                     |  |  |           +--N.vectensis_Ro_
+|                                                                     |  +--| (60)
+|                                                                     |     |     +--B.floridae_Gbx
+|                                                                     |     |  +--| (99)
+|                                                                     |     |  |  |  +--D.melanogaster_Gbx_Unpg
+|                                                                     |     |  |  +--| (99)
+|                                                                     |     |  |     |  +--S.purpuratus_Gbx_Unpg
+|                                                                     |     |  |     +--| (100)
+|                                                                     |     |  |        +--X.bocki_Gbx_
+|                                                                     |     +--| (98)
+|                                                                     |        +---------N.westbladi_P_Gbx
+|                                                                  +--| (88)
+|                                                                  |  |                 +--A.virescens_AntHox
+|                                                                  |  |              +--| (42)
+|                                                                  |  |              |  |  +--X.bocki_AntHox
+|                                                                  |  |              |  +--| (100)
+|                                                                  |  |              |     +--X.profunda_AntHox
+|                                                                  |  |           +--| (42)
+|                                                                  |  |           |  |           +--C.longifissura_AntHox
+|                                                                  |  |           |  |        +--| (96)
+|                                                                  |  |           |  |        |  +--S.roscoffensis_Hox1
+|                                                                  |  |           |  |     +--| (100)
+|                                                                  |  |           |  |     |  +--P.naikaiensis_G_AntHox
+|                                                                  |  |           |  |  +--| (52)
+|                                                                  |  |           |  |  |  +--I.pulchra_AntHox
+|                                                                  |  |           |  +--| (89)
+|                                                                  |  |           |     |     +--D.longitubus_AntHox
+|                                                                  |  |           |     |  +--| (82)
+|                                                                  |  |           |     |  |  |  +--M.stichopi_AntHox
+|                                                                  |  |           |     |  |  +--| (95)
+|                                                                  |  |           |     |  |     +--N.westbladi_AntHox
+|                                                                  |  |           |     +--| (36)
+|                                                                  |  |           |        +--H.miamia_AntHox
+|                                                                  |  |        +--| (77)
+|                                                                  |  |        |  |  +--P.karlingi_AntHox
+|                                                                  |  |        |  +--| (100)
+|                                                                  |  |        |     +--P.rhammifera_AntHox
+|                                                                  |  |     +--| (96)
+|                                                                  |  |     |  |                 +--B.floridae_Hox1
+|                                                                  |  |     |  |              +--| (97)
+|                                                                  |  |     |  |              |  +------C.elegans_Hox1_ceh13
+|                                                                  |  |     |  |           +--| (93)
+|                                                                  |  |     |  |           |  +--S.purpuratus_HoxB1
+|                                                                  |  |     |  |        +--| (77)
+|                                                                  |  |     |  |        |  |  +--C.telata_Hox1_labial
+|                                                                  |  |     |  |        |  +--| (78)
+|                                                                  |  |     |  |        |     +--P.caudatus_Lab
+|                                                                  |  |     |  |     +--| (95)
+|                                                                  |  |     |  |     |  +--L.gigantea_Hox1_labial
+|                                                                  |  |     |  |  +--| (95)
+|                                                                  |  |     |  |  |  +--D.melanogaster_Hox1_lab
+|                                                                  |  |     |  +--| (43)
+|                                                                  |  |     |     +--D.gymnopharyngeus_AntHox
+|                                                                  |  |  +--| (100)
+|                                                                  |  |  |  +--P.rubra_AntHox
+|                                                                  |  +--| (99)
+|                                                                  |     +----N.vectensis_AnthozoanHox6
+|                                                               +--| (98)
+|                                                               |  |                    +--A.virescens_Mox
+|                                                               |  |                 +--| (79)
+|                                                               |  |                 |  +-------N.gullmarensis_Mox
+|                                                               |  |              +--| (93)
+|                                                               |  |              |  |  +--H.lactomaculata_Mox
+|                                                               |  |              |  +--| (80)
+|                                                               |  |              |     |           +--P.karlingi_Mox
+|                                                               |  |              |     +-----------| (100)
+|                                                               |  |              |                 +--P.rhammifera_Mox
+|                                                               |  |           +--| (70)
+|                                                               |  |           |  +--H.miamia_G_Mox_
+|                                                               |  |        +--| (88)
+|                                                               |  |        |  |           +--B.floridae_Mox
+|                                                               |  |        |  |        +--| (80)
+|                                                               |  |        |  |        |  +--S.purpuratus_Mox2
+|                                                               |  |        |  |     +--| (76)
+|                                                               |  |        |  |     |  +--P.caudatus_Mox2
+|                                                               |  |        |  |  +--| (64)
+|                                                               |  |        |  |  |  |           +--D.melanogaster_Meox_Btn
+|                                                               |  |        |  |  |  |        +--| (94)
+|                                                               |  |        |  |  |  |        |  +--N.vectensis_MoxC
+|                                                               |  |        |  |  |  |     +--| (85)
+|                                                               |  |        |  |  |  |     |  +--N.vectensis_MoxD
+|                                                               |  |        |  |  |  |  +--| (81)
+|                                                               |  |        |  |  |  |  |  +--N.vectensis_MoxA
+|                                                               |  |        |  |  |  +--| (72)
+|                                                               |  |        |  |  |     |     +--M.stichopi_Mox
+|                                                               |  |        |  |  |     |  +--| (93)
+|                                                               |  |        |  |  |     |  |  +--N.westbladi_P_Mox
+|                                                               |  |        |  |  |     +--| (64)
+|                                                               |  |        |  |  |        +--N.vectensis_MoxB
+|                                                               |  |        |  +--| (81)
+|                                                               |  |        |     +--X.bocki_Mox
+|                                                               |  |  +-----| (99)
+|                                                               |  |  |     +-----I.pulchra_Mox
+|                                                               |  +--| (53)
+|                                                               |     +---------N.vectensis_HD117
+|                                                            +--| (60)
+|                                                            |  |  +--B.floridae_Hox2
+|                                                            |  +--| (98)
+|                                                            |     +---S.purpuratus_HoxA2-like
+|                                                         +--| (96)
+|                                                         |  +--P.caudatus_Hox2_Pb
+|                                                      +--| (97)
+|                                                      |  |     +--C.telata_Hox2_Pb
+|                                                      |  |  +--| (100)
+|                                                      |  |  |  +--D.melanogaster_Hox2_pb
+|                                                      |  +--| (98)
+|                                                      |     +--L.gigantea_Hox2_pb
+|                                                   +--| (94)
+|                                                   |  |                                                                         +--A.virescens_PostHox
+|                                                   |  |                                                                      +--| (99)
+|                                                   |  |                                                                      |  +--N.sp2_PostHox
+|                                                   |  |                                                                   +--| (58)
+|                                                   |  |                                                                   |  +--P.variabilis_PostHox
+|                                                   |  |                                                                +--| (88)
+|                                                   |  |                                                                |  +--F.glomerata_PostHox
+|                                                   |  |                                                             +--| (90)
+|                                                   |  |                                                             |  +--I.pulchra_PostHox
+|                                                   |  |                                                          +--| (91)
+|                                                   |  |                                                          |  +--H.rubropunctata_PostHox
+|                                                   |  |                                                       +--| (91)
+|                                                   |  |                                                       |  |     +--C.longifissura_PostHox
+|                                                   |  |                                                       |  |  +--| (85)
+|                                                   |  |                                                       |  |  |  +--P.naikaiensis_G_PostHox
+|                                                   |  |                                                       |  +--| (66)
+|                                                   |  |                                                       |     |     +--N.fusca_PostHox
+|                                                   |  |                                                       |     |  +--| (85)
+|                                                   |  |                                                       |     |  |  +--S.roscoffensis_PostHox
+|                                                   |  |                                                       |     +--| (50)
+|                                                   |  |                                                       |        |  +--P.karlingi_PostHox
+|                                                   |  |                                                       |        +--| (99)
+|                                                   |  |                                                       |           +--P.rhammifera_PostHox
+|                                                   |  |                                                    +--| (91)
+|                                                   |  |                                                    |  |  +--D.gymnopharyngeus_PostHox
+|                                                   |  |                                                    |  +--| (99)
+|                                                   |  |                                                    |     +--D.longitubus_PostHox
+|                                                   |  |                                                 +--| (94)
+|                                                   |  |                                                 |  +--H.miamia_PostHox
+|                                                   |  |                                              +--| (68)
+|                                                   |  |                                              |  +--X.bocki_PostHox
+|                                                   |  |                                           +--| (89)
+|                                                   |  |                                           |  |                          +--B.floridae_Hox13
+|                                                   |  |                                           |  |                       +--| (57)
+|                                                   |  |                                           |  |                       |  +--B.floridae_Hox14
+|                                                   |  |                                           |  |                    +--| (99)
+|                                                   |  |                                           |  |                    |  |     +-----B.lanceolatum_Hox15
+|                                                   |  |                                           |  |                    |  |  +--| (99)
+|                                                   |  |                                           |  |                    |  |  |  +---S.sp9_PostHox
+|                                                   |  |                                           |  |                    |  +--| (51)
+|                                                   |  |                                           |  |                    |     |  +----------C.elegans_Hox91315_nob1
+|                                                   |  |                                           |  |                    |     +--| (48)
+|                                                   |  |                                           |  |                    |        |   +-----C.telata_Post1
+|                                                   |  |                                           |  |                    |        +---| (94)
+|                                                   |  |                                           |  |                    |            +-----L.gigantea_Post1
+|                                                   |  |                                           |  |                 +--| (95)
+|                                                   |  |                                           |  |                 |  |  +--C.telata_Post2
+|                                                   |  |                                           |  |                 |  +--| (100)
+|                                                   |  |                                           |  |                 |     +--L.gigantea_Post2
+|                                                   |  |                                           |  |              +--| (86)
+|                                                   |  |                                           |  |              |  |  +--C.elegans_Hox91315_php3
+|                                                   |  |                                           |  |              |  +--| (100)
+|                                                   |  |                                           |  |              |     |  +--D.melanogaster_Hox91315_AbdB
+|                                                   |  |                                           |  |              |     +--| (80)
+|                                                   |  |                                           |  |              |        +--P.caudatus_AbdB1
+|                                                   |  |                                           |  |           +--| (49)
+|                                                   |  |                                           |  |           |  +--P.rubra_PostHox1
+|                                                   |  |                                           |  |        +--| (60)
+|                                                   |  |                                           |  |        |  +--F.sp_PostHox
+|                                                   |  |                                           |  |     +--| (82)
+|                                                   |  |                                           |  |     |  |  +--M.stichopi_PostHox
+|                                                   |  |                                           |  |     |  +--| (58)
+|                                                   |  |                                           |  |     |     |    +-------P.caudatus_AbdB2
+|                                                   |  |                                           |  |     |     +----| (95)
+|                                                   |  |                                           |  |     |          +--P.rubra_PostHox2
+|                                                   |  |                                           |  |  +--| (83)
+|                                                   |  |                                           |  |  |  +--N.westbladi_PostHox2
+|                                                   |  |                                           |  +--| (50)
+|                                                   |  |                                           |     +--N.westbladi_G_PostHox1
+|                                                   |  |                                        +--| (69)
+|                                                   |  |                                        |  |           +--S.purpuratus_HD-protein
+|                                                   |  |                                        |  |        +--| (51)
+|                                                   |  |                                        |  |        |  +-----------S.purpuratus_HoxA10-like
+|                                                   |  |                                        |  |     +--| (67)
+|                                                   |  |                                        |  |     |  +--S.purpuratus_HoxC9-like
+|                                                   |  |                                        |  |  +--| (96)
+|                                                   |  |                                        |  |  |  +--S.purpuratus_HoxD9A
+|                                                   |  |                                        |  +--| (96)
+|                                                   |  |                                        |     +--S.purpuratus_HoxA10
+|                                                   |  |                                     +--| (47)
+|                                                   |  |                                     |  +--B.floridae_Hox9
+|                                                   |  |                                  +--| (92)
+|                                                   |  |                                  |  |        +--B.floridae_Hox10
+|                                                   |  |                                  |  |     +--| (97)
+|                                                   |  |                                  |  |     |  +--B.floridae_Hox12
+|                                                   |  |                                  |  |  +--| (94)
+|                                                   |  |                                  |  |  |  +--B.floridae_Hox11
+|                                                   |  |                                  |  +--| (38)
+|                                                   |  |                                  |     +--S.psammicola_PostHox
+|                                                   |  |                             +----| (97)
+|                                                   |  |                             |    +--S.purpuratus_HoxB9
+|                                                   |  |                          +--| (92)
+|                                                   |  |                          |  |    +--X.bocki_CentHox1
+|                                                   |  |                          |  +----| (100)
+|                                                   |  |                          |       +--X.profunda_CentHox1
+|                                                   |  |                       +--| (91)
+|                                                   |  |                       |  |        +--C.longifissura_CentHox
+|                                                   |  |                       |  |     +--| (81)
+|                                                   |  |                       |  |     |  +--S.roscoffensis_CentHox
+|                                                   |  |                       |  |  +--| (95)
+|                                                   |  |                       |  |  |  +--I.pulchra_CentHox
+|                                                   |  |                       |  +--| (70)
+|                                                   |  |                       |     +--P.naikaiensis_G_CentHox
+|                                                   |  |                    +--| (69)
+|                                                   |  |                    |  |  +--D.gymnopharyngeus_CentHox
+|                                                   |  |                    |  +--| (90)
+|                                                   |  |                    |     +--H.miamia_CentHox
+|                                                   |  |                 +--| (47)
+|                                                   |  |                 |  |           +--B.floridae_Hox4
+|                                                   |  |                 |  |        +--| (92)
+|                                                   |  |                 |  |        |  |  +--C.elegans_Hox4_lin39
+|                                                   |  |                 |  |        |  +--| (97)
+|                                                   |  |                 |  |        |     |  +--X.bocki_CentHox3
+|                                                   |  |                 |  |        |     +--| (98)
+|                                                   |  |                 |  |        |        +--X.profunda_CentHox3
+|                                                   |  |                 |  |     +--| (89)
+|                                                   |  |                 |  |     |  |    +--M.stichopi_CentHox
+|                                                   |  |                 |  |     |  +----| (100)
+|                                                   |  |                 |  |     |       +--N.westbladi_G_CentHox
+|                                                   |  |                 |  |  +--| (58)
+|                                                   |  |                 |  |  |  |              +--B.floridae_Hox6
+|                                                   |  |                 |  |  |  |           +--| (78)
+|                                                   |  |                 |  |  |  |           |  +--S.purpuratus_HoxHB1
+|                                                   |  |                 |  |  |  |        +--| (82)
+|                                                   |  |                 |  |  |  |        |  |     +--B.floridae_Hox7
+|                                                   |  |                 |  |  |  |        |  |  +--| (91)
+|                                                   |  |                 |  |  |  |        |  |  |  |                    +--B.floridae_Hox8
+|                                                   |  |                 |  |  |  |        |  |  |  |                 +--| (69)
+|                                                   |  |                 |  |  |  |        |  |  |  |                 |  |  +--C.telata_Lox4
+|                                                   |  |                 |  |  |  |        |  |  |  |                 |  +--| (100)
+|                                                   |  |                 |  |  |  |        |  |  |  |                 |     +--L.gigantea_Hox7_Lox4
+|                                                   |  |                 |  |  |  |        |  |  |  |              +--| (79)
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |           +--C.telata_Lox2
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |        +--| (100)
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |        |  +--L.gigantea_Lox2
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |     +--| (99)
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |     |  +--P.caudatus_Ubx
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |  +--| (99)
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  |  |  +--D.melanogaster_Hox68_Ubx
+|                                                   |  |                 |  |  |  |        |  |  |  |              |  +--| (99)
+|                                                   |  |                 |  |  |  |        |  |  |  |              |     +--D.melanogaster_Hox68_AbdA
+|                                                   |  |                 |  |  |  |        |  |  |  |           +--| (72)
+|                                                   |  |                 |  |  |  |        |  |  |  |           |  +-----C.elegans_Hox68_mab5
+|                                                   |  |                 |  |  |  |        |  |  |  |        +--| (70)
+|                                                   |  |                 |  |  |  |        |  |  |  |        |  +--L.gigantea_Hox7_Antp
+|                                                   |  |                 |  |  |  |        |  |  |  |     +--| (80)
+|                                                   |  |                 |  |  |  |        |  |  |  |     |  |  +--P.caudatus_Hox6_HB3_ANTP
+|                                                   |  |                 |  |  |  |        |  |  |  |     |  +--| (93)
+|                                                   |  |                 |  |  |  |        |  |  |  |     |     +--P.caudatus_Hox7_HB2_ANTP
+|                                                   |  |                 |  |  |  |        |  |  |  |  +--| (79)
+|                                                   |  |                 |  |  |  |        |  |  |  |  |  +--S.purpuratus_HoxA7_2
+|                                                   |  |                 |  |  |  |        |  |  |  +--| (71)
+|                                                   |  |                 |  |  |  |        |  |  |     |  +--C.telata_ANTP2
+|                                                   |  |                 |  |  |  |        |  |  |     +--| (81)
+|                                                   |  |                 |  |  |  |        |  |  |        +--D.melanogaster_Hox68_ANTP
+|                                                   |  |                 |  |  |  |        |  +--| (28)
+|                                                   |  |                 |  |  |  |        |     |     +----------------C.elegans_Hox68_egl5
+|                                                   |  |                 |  |  |  |        |     |  +--| (74)
+|                                                   |  |                 |  |  |  |        |     |  |  +--S.purpuratus_HoxA7_1
+|                                                   |  |                 |  |  |  |        |     +--| (32)
+|                                                   |  |                 |  |  |  |        |        |  +--X.bocki_CentHox2
+|                                                   |  |                 |  |  |  |        |        +--| (99)
+|                                                   |  |                 |  |  |  |        |           +--X.profunda_CentHox2
+|                                                   |  |                 |  |  |  |     +--| (97)
+|                                                   |  |                 |  |  |  |     |  |  +--C.telata_Lox5
+|                                                   |  |                 |  |  |  |     |  +--| (73)
+|                                                   |  |                 |  |  |  |     |     +--L.gigantea_Lox5
+|                                                   |  |                 |  |  |  |  +--| (91)
+|                                                   |  |                 |  |  |  |  |  +--D.melanogaster_Hox68_Ftz
+|                                                   |  |                 |  |  |  +--| (51)
+|                                                   |  |                 |  |  |     |           +--B.lanceolatum_Hox5
+|                                                   |  |                 |  |  |     |        +--| (73)
+|                                                   |  |                 |  |  |     |        |  |              +--C.telata_Dfd
+|                                                   |  |                 |  |  |     |        |  |           +--| (89)
+|                                                   |  |                 |  |  |     |        |  |           |  |  +--D.melanogaster_Hox4_Dfd
+|                                                   |  |                 |  |  |     |        |  |           |  +--| (93)
+|                                                   |  |                 |  |  |     |        |  |           |     |  +--F.sp_CentHox
+|                                                   |  |                 |  |  |     |        |  |           |     +--| (94)
+|                                                   |  |                 |  |  |     |        |  |           |        +---------N.vectensis_HD065
+|                                                   |  |                 |  |  |     |        |  |        +--| (91)
+|                                                   |  |                 |  |  |     |        |  |        |  +--L.gigantea_Hox4_Dfd
+|                                                   |  |                 |  |  |     |        |  |     +--| (70)
+|                                                   |  |                 |  |  |     |        |  |     |  +--N.sp2_CentHox
+|                                                   |  |                 |  |  |     |        |  |  +--| (98)
+|                                                   |  |                 |  |  |     |        |  |  |  +--P.caudatus_Hox4_Dfd
+|                                                   |  |                 |  |  |     |        |  +--| (84)
+|                                                   |  |                 |  |  |     |        |     |  +--C.telata_Scr
+|                                                   |  |                 |  |  |     |        |     +--| (97)
+|                                                   |  |                 |  |  |     |        |        +--L.gigantea_Hox5_Scr
+|                                                   |  |                 |  |  |     |     +--| (71)
+|                                                   |  |                 |  |  |     |     |  +--D.melanogaster_Hox5_Scr
+|                                                   |  |                 |  |  |     |  +--| (83)
+|                                                   |  |                 |  |  |     |  |  +--P.caudatus_Scr
+|                                                   |  |                 |  |  |     +--| (83)
+|                                                   |  |                 |  |  |        +--S.purpuratus_HoxA5
+|                                                   |  |                 |  +--| (74)
+|                                                   |  |                 |     +--D.longitubus_CentHox
+|                                                   |  |              +--| (91)
+|                                                   |  |              |  +--P.karlingi_CentHox
+|                                                   |  |           +--| (96)
+|                                                   |  |           |  +--P.rubra_CentHox
+|                                                   |  |        +--| (97)
+|                                                   |  |        |  |  +--N.vectensis_AnthozoanHox1
+|                                                   |  |        |  +--| (99)
+|                                                   |  |        |     +--N.vectensis_AnthozoanHox1A
+|                                                   |  |     +--| (97)
+|                                                   |  |     |  |        +--B.floridae_Xlox
+|                                                   |  |     |  |     +--| (100)
+|                                                   |  |     |  |     |  +--S.purpuratus_Xlox
+|                                                   |  |     |  |  +--| (100)
+|                                                   |  |     |  |  |  +--L.gigantea_Xlox
+|                                                   |  |     |  +--| (100)
+|                                                   |  |     |     |  +--C.telata_Xlox
+|                                                   |  |     |     +--| (97)
+|                                                   |  |     |        +---P.caudatus_Xlox
+|                                                   |  |  +--| (96)
+|                                                   |  |  |  |           +--B.floridae_Hox3
+|                                                   |  |  |  |        +--| (99)
+|                                                   |  |  |  |        |  |  +--T.castaneum_Hox3_zen1
+|                                                   |  |  |  |        |  +--| (100)
+|                                                   |  |  |  |        |     +--T.castaneum_Hox3_zen2
+|                                                   |  |  |  |     +--| (81)
+|                                                   |  |  |  |     |  +--S.purpuratus_HoxA3
+|                                                   |  |  |  |  +--| (62)
+|                                                   |  |  |  |  |  |  +--C.telata_Hox3
+|                                                   |  |  |  |  |  +--| (98)
+|                                                   |  |  |  |  |     +--L.goshimai_Hox3
+|                                                   |  |  |  +--| (99)
+|                                                   |  |  |     +--P.caudatus_Hox3
+|                                                   |  +--| (96)
+|                                                   |     |              +--B.floridae_Gsx
+|                                                   |     |           +--| (97)
+|                                                   |     |           |  +--C.telata_Gsx
+|                                                   |     |        +--| (91)
+|                                                   |     |        |  +--S.purpuratus_Gsx_HB1
+|                                                   |     |     +--| (59)
+|                                                   |     |     |  |               +--D.longitubus_Gsx
+|                                                   |     |     |  |            +--| (82)
+|                                                   |     |     |  |            |  +---H.miamia_Gsx
+|                                                   |     |     |  |         +--| (100)
+|                                                   |     |     |  |         |  |         +--I.pulchra_Gsx
+|                                                   |     |     |  |         |  |     +---| (99)
+|                                                   |     |     |  |         |  |     |   +--P.variabilis_Gsx
+|                                                   |     |     |  |         |  |  +--| (97)
+|                                                   |     |     |  |         |  |  |  +--P.naikaiensis_G_Gsx
+|                                                   |     |     |  |         |  +--| (98)
+|                                                   |     |     |  |         |     +--S.roscoffensis_Gsx
+|                                                   |     |     |  |     +---| (100)
+|                                                   |     |     |  |     |   +--X.bocki_G_Gsx2_
+|                                                   |     |     |  |  +--| (62)
+|                                                   |     |     |  |  |  +--D.melanogaster_Ind_Gsx
+|                                                   |     |     |  +--| (69)
+|                                                   |     |     |     |  +--X.bocki_G_Gsx1_
+|                                                   |     |     |     +--| (87)
+|                                                   |     |     |        +--X.profunda_Gsx
+|                                                   |     |  +--| (99)
+|                                                   |     |  |  +--L.gigantea_Gsx
+|                                                   |     +--| (100)
+|                                                   |        +--N.vectensis_Gsx
+|                                                +--| (97)
+|                                                |  |  +--N.vectensis_AnthozoanHox7
+|                                                |  +--| (100)
+|                                                |     |  +--N.vectensis_AnthozoanHox8A
+|                                                |     +--| (100)
+|                                                |        +--N.vectensis_AnthozoanHox8B
+|                                      +---------| (100)
+|                                      |         +--N.vectensis_AnthozoanHox6A
+|                                   +--| (97)
+|                                   |  +--L.gigantea_Cdx
+|                                +--| (94)
+|                                |  +--N.sp2_Cdx1
+|                             +--| (96)
+|                             |  +--P.caudatus_Cdx_Caudal
+|                          +--| (99)
+|                          |  |  +-------C.elegans_Cdx_pal1
+|                          |  +--| (96)
+|                          |     |  +--C.telata_Caudal
+|                          |     +--| (96)
+|                          |        +--D.melanogaster_Cdx_cad
+|                       +--| (88)
+|                       |  +--S.purpuratus_Cdx
+|                    +--| (99)
+|                    |  +--B.floridae_Cdx
+|                 +--| (75)
+|                 |  +--N.westbladi_P_Cdx
+|              +--| (75)
+|              |  +--M.stichopi_Cdx
+|           +--| (87)
+|           |  |  +--X.bocki_G_Cdx
+|           |  +--| (100)
+|           |     +--X.profunda_Cdx
+|        +--| (91)
+|        |  +--D.gymnopharyngeus_Cdx_
+|     +--| (97)
+|     |  |  +--H.miamia_Cdx
+|     |  +--| (66)
+|     |     |  +--P.rubra_Cdx1
+|     |     +--| (100)
+|     |        +--P.rubra_Cdx2
+|  +--| (83)
+|  |  |        +**I.pulchra_Cdx
+|  |  |     +--|
+|  |  |     |  +**S.roscoffensis_Cdx
+|  |  |  +--| (91)
+|  |  |  |  +--P.naikaiensis_Cdx
+|  |  +--| (87)
+|  |     +--M.sp14_Cdx
++--| (61)
+|  +--P.rhammifera_Cdx
+|
+|  +--A.virescens_Cdx
++--| (48)
+   +--P.karlingi_Cdx
+
+
+Consensus tree in newick format: 
+
+(A.agile_Cdx:0.0000020262,((((((((((((((((((((((((((((((A.agile_Evx_:0.0000021087,P.variabilis_Evx:0.0000020262)100:0.0809537810,I.pulchra_Evx:0.0573929641)93:0.0446961874,((D.longitubus_Evx:0.1155626579,P.rubra_Evx:0.1293107440)87:0.0000020355,H.miamia_Evx:0.1341932808)97:0.1005146088)94:0.0186357558,(P.naikaiensis_G_Evx:0.0000020262,S.roscoffensis_Evx:0.0224734362)100:0.0828462390)98:0.2296276297,(B.floridae_EvxA:0.0000020262,((((C.elegans_Evx_vab7:0.3186822510,S.purpuratus_Evx:0.0058235635)94:0.0502136006,(N.vectensis_Evx:0.2480927698,((N.westbladi_Evx2:0.0835216018,N.westbladi_P_Evx1:0.0327992849)100:0.1708306158,S.psammicola_Evx:0.0646757600)95:0.0000020547)99:0.0932785263)97:0.0996512237,X.bocki_G_Evx__SPLICED:0.0795392326)71:0.0200267327,(D.melanogaster_Evx_eve:0.0293752586,P.caudatus_Evx:0.0895024124)93:0.0284737098)79:0.0360219799)95:0.1131330745)96:0.0585615386,B.floridae_EvxB:0.0253956066)100:0.7618260442,C.elegans_Mnx_ceh12:0.4499107215)35:0.3299437431,((B.floridae_Mnx:0.0379413397,((((((D.gymnopharyngeus_Mnx:0.0000020262,H.miamia_Mnx:0.0000020262)99:0.0000020262,(N.sp2_Mnx:0.0572197019,X.bocki_G_Mnx_:0.0941349960)82:0.0278501700)81:0.0280681006,I.pulchra_Mnx:0.0288872810)82:0.0473358504,(P.rhammifera_Mnx:0.0000020262,S.roscoffensis_Mnx:0.0000029585)95:0.0153841764)91:0.0967165481,(N.westbladi_Mnx:0.6648278175,S.purpuratus_MN_P:0.0000020355)79:0.0000023635)85:0.0684648590,(M.stichopi_Mnx:0.0000020547,S.psammicola_Mnx:0.0000020262)100:0.1762756424)78:0.0237687956)95:0.0534490087,D.melanogaster_Mnx_Exex:0.0296998590)98:0.2671964490)25:0.0000023308,((((((((((A.agile_Ro_:0.0899758106,I.pulchra_Ro_:0.1564339330)100:0.0895354166,(E.macrobursalium_Ro_:0.0633310132,S.roscoffensis_Ro_:0.1481093389)100:0.1596633623)100:0.1055763055,H.miamia_Ro2_:0.1934961245)95:0.2115758277,X.bocki_G_Ro_:0.0000020355)88:0.0244825303,B.lanceolatum_Rough-like_:0.0706467004)90:0.0475979536,S.purpuratus_HB1-like:0.0769315141)93:0.0399403605,(D.gymnopharyngeus_Ro_:0.2421094469,H.asinina_Rough-like_:0.2144045985)54:0.1006201744)55:0.0694929678,M.stichopi_Ro_:0.0475811142)48:0.0000029858,(((((C.elegans_Ro:1.1088703951,H.miamia_Ro1_:0.6394586491)54:0.3617791628,H.leucospilota_Rough_:0.3343708547)53:0.2267399431,N.westbladi_Ro_:0.1871250937)79:0.2137290996,D.melanogaster_Rough_:0.0170837711)57:0.1561282879,N.vectensis_Ro_:0.2162692986)33:0.0438558421)99:0.9730201907,((B.floridae_Gbx:0.0000027951,(D.melanogaster_Gbx_Unpg:0.0027495163,(S.purpuratus_Gbx_Unpg:0.3459010275,X.bocki_Gbx_:0.1162695101)100:0.0861683074)99:0.1182234255)99:0.0946294326,N.westbladi_P_Gbx:1.1412420691)98:0.3318200013)60:0.1233002881)93:0.2767392714,((((((A.virescens_AntHox:0.0217507871,(X.bocki_AntHox:0.0000020262,X.profunda_AntHox:0.0000020262)100:0.0224291529)42:0.0000020262,((((C.longifissura_AntHox:0.0000020262,S.roscoffensis_Hox1:0.0000020262)96:0.0000020262,P.naikaiensis_G_AntHox:0.0229088816)100:0.0473176858,I.pulchra_AntHox:0.0000020262)52:0.0230515979,((D.longitubus_AntHox:0.1095789747,(M.stichopi_AntHox:0.0746700175,N.westbladi_AntHox:0.1039650084)95:0.0720296925)82:0.0000020262,H.miamia_AntHox:0.0000020262)36:0.0000020262)89:0.0465950437)42:0.0223021931,(P.karlingi_AntHox:0.0000020262,P.rhammifera_AntHox:0.0000020262)100:0.0488570318)77:0.0277377855,((((((B.floridae_Hox1:0.0000026123,C.elegans_Hox1_ceh13:0.7895536175)97:0.1653038261,S.purpuratus_HoxB1:0.1245387481)93:0.0549342446,(C.telata_Hox1_labial:0.0257667280,P.caudatus_Lab:0.0000020262)78:0.0028880123)77:0.0000020355,L.gigantea_Hox1_labial:0.0000020262)95:0.0992720808,D.melanogaster_Hox1_lab:0.1214661267)95:0.0604495516,D.gymnopharyngeus_AntHox:0.0273615975)43:0.0273647507)96:0.1097219798,P.rubra_AntHox:0.0330701557)100:0.3118928201,N.vectensis_AnthozoanHox6:0.5575280071)99:0.2455518955)88:0.0779400321,((((((A.virescens_Mox:0.2323375376,N.gullmarensis_Mox:0.9278002746)79:0.2910403707,(H.lactomaculata_Mox:0.0000022338,(P.karlingi_Mox:0.0000025675,P.rhammifera_Mox:0.0000020262)100:1.3589068434)80:0.3498254400)93:0.1178608349,H.miamia_G_Mox_:0.1516052790)70:0.0317893019,((((B.floridae_Mox:0.0760609160,S.purpuratus_Mox2:0.1468146196)80:0.0473170905,P.caudatus_Mox2:0.1428384337)76:0.0404763803,((((D.melanogaster_Meox_Btn:0.3753248036,N.vectensis_MoxC:0.2088326114)94:0.0396849166,N.vectensis_MoxD:0.0138721289)85:0.0324877224,N.vectensis_MoxA:0.0478868891)81:0.0436920181,((M.stichopi_Mox:0.3140700676,N.westbladi_P_Mox:0.3781267894)93:0.2699228935,N.vectensis_MoxB:0.0000020262)64:0.0000028458)72:0.0560726272)64:0.0533950204,X.bocki_Mox:0.1082878048)81:0.1785125403)88:0.1472657513,I.pulchra_Mox:0.6473606631)99:0.6528101373,N.vectensis_HD117:1.0958930318)53:0.0000027666)98:0.1040966063,(B.floridae_Hox2:0.3267588607,S.purpuratus_HoxA2-like:0.4657482960)98:0.0689888844)60:0.0000020355,P.caudatus_Hox2_Pb:0.0000020262)96:0.0588644005,((C.telata_Hox2_Pb:0.0184306788,D.melanogaster_Hox2_pb:0.0211401498)100:0.0580000148,L.gigantea_Hox2_pb:0.0000020355)98:0.0735465788)97:0.1585522380,((((((((((((((((((((((((A.virescens_PostHox:0.0000020262,N.sp2_PostHox:0.0375052238)99:0.0508335452,P.variabilis_PostHox:0.1004412239)58:0.0207194568,F.glomerata_PostHox:0.0000020262)88:0.0000024360,I.pulchra_PostHox:0.0000020262)90:0.0363047233,H.rubropunctata_PostHox:0.1000742089)91:0.0407159299,((C.longifissura_PostHox:0.0000020262,P.naikaiensis_G_PostHox:0.0000020262)85:0.0000020262,((N.fusca_PostHox:0.0000020262,S.roscoffensis_PostHox:0.0176576394)85:0.0039160115,(P.karlingi_PostHox:0.0000020262,P.rhammifera_PostHox:0.0000020262)99:0.0219072674)50:0.0000020262)66:0.0000020355)91:0.0560261199,(D.gymnopharyngeus_PostHox:0.2357108083,D.longitubus_PostHox:0.1251951133)99:0.1992803579)91:0.0797111395,H.miamia_PostHox:0.0675115401)94:0.1227534250,X.bocki_PostHox:0.0000024500)68:0.0522820747,(((((((((B.floridae_Hox13:0.3843287616,B.floridae_Hox14:0.2761118324)57:0.2832707088,((B.lanceolatum_Hox15:0.6354267309,S.sp9_PostHox:0.4918763489)99:0.3094280431,(C.elegans_Hox91315_nob1:1.1930204519,(C.telata_Post1:0.6527363479,L.gigantea_Post1:0.7259266354)94:0.4539213120)48:0.0312275564)51:0.1675948546)99:0.3958730318,(C.telata_Post2:0.0622342278,L.gigantea_Post2:0.0956616123)100:0.2760528487)95:0.1614976250,(C.elegans_Hox91315_php3:0.2034374957,(D.melanogaster_Hox91315_AbdB:0.1567996893,P.caudatus_AbdB1:0.0734523945)80:0.0671008497)100:0.3384313818)86:0.1711842788,P.rubra_PostHox1:0.2831341510)49:0.0000022700,F.sp_PostHox:0.0812464131)60:0.1014594301,(M.stichopi_PostHox:0.0389946385,(P.caudatus_AbdB2:0.9181517745,P.rubra_PostHox2:0.0000027166)95:0.5302473036)58:0.0404711225)82:0.0184254859,N.westbladi_PostHox2:0.0226073551)83:0.0230275509,N.westbladi_G_PostHox1:0.0529140701)50:0.0204339228)89:0.1161832386,((((S.purpuratus_HD-protein:0.1363744497,S.purpuratus_HoxA10-like:1.3142444657)51:0.0000020961,S.purpuratus_HoxC9-like:0.2158061781)67:0.0232521217,S.purpuratus_HoxD9A:0.3006636068)96:0.2746107964,S.purpuratus_HoxA10:0.1443912176)96:0.0538650483)69:0.0666098059,B.floridae_Hox9:0.1692630368)47:0.0349360321,(((B.floridae_Hox10:0.1170479945,B.floridae_Hox12:0.2547624901)97:0.0520363495,B.floridae_Hox11:0.0757274603)94:0.1453494569,S.psammicola_PostHox:0.1208354238)38:0.0063581963)92:0.1783178104,S.purpuratus_HoxB9:0.0000026148)97:0.5987395645,(X.bocki_CentHox1:0.0108766943,X.profunda_CentHox1:0.1905859832)100:0.6104336258)92:0.1302445994,(((C.longifissura_CentHox:0.0000020262,S.roscoffensis_CentHox:0.0000020262)81:0.0000020262,I.pulchra_CentHox:0.0321129149)95:0.0269436799,P.naikaiensis_G_CentHox:0.0000020262)70:0.0000020262)91:0.0803917259,(D.gymnopharyngeus_CentHox:0.0900877665,H.miamia_CentHox:0.0891480792)90:0.0467187300)69:0.0000028444,((((B.floridae_Hox4:0.0732876823,(C.elegans_Hox4_lin39:0.3281138048,(X.bocki_CentHox3:0.0000020262,X.profunda_CentHox3:0.0000020262)98:0.0330657603)97:0.1380452307)92:0.0332936774,(M.stichopi_CentHox:0.2804011611,N.westbladi_G_CentHox:0.0000020547)100:0.5920485794)89:0.0271824726,(((((B.floridae_Hox6:0.0728555934,S.purpuratus_HoxHB1:0.1484318080)78:0.0324807796,((B.floridae_Hox7:0.0252191608,(((((((B.floridae_Hox8:0.0576619876,(C.telata_Lox4:0.0000020262,L.gigantea_Hox7_Lox4:0.0493458133)100:0.0822782335)69:0.0243535885,((((C.telata_Lox2:0.0000020262,L.gigantea_Lox2:0.0758453754)100:0.1511862088,P.caudatus_Ubx:0.0578514060)99:0.0503385059,D.melanogaster_Hox68_Ubx:0.0289130415)99:0.0459847187,D.melanogaster_Hox68_AbdA:0.0339545356)99:0.0277433120)79:0.0820099702,C.elegans_Hox68_mab5:0.6338447467)72:0.0000025675,L.gigantea_Hox7_Antp:0.0000020262)70:0.0000023879,(P.caudatus_Hox6_HB3_ANTP:0.0909431586,P.caudatus_Hox7_HB2_ANTP:0.0148956213)93:0.0687617812)80:0.0301706618,S.purpuratus_HoxA7_2:0.2178017614)79:0.0000020353,(C.telata_ANTP2:0.0000020262,D.melanogaster_Hox68_ANTP:0.0000020262)81:0.0000020262)71:0.0000020262)91:0.0277857477,((C.elegans_Hox68_egl5:1.8136593953,S.purpuratus_HoxA7_1:0.2296762854)74:0.1095445176,(X.bocki_CentHox2:0.0000020262,X.profunda_CentHox2:0.0000020262)99:0.1574237142)32:0.0000020355)28:0.0000020262)82:0.0549349962,(C.telata_Lox5:0.0803623071,L.gigantea_Lox5:0.0516878171)73:0.0000020262)97:0.0501237704,D.melanogaster_Hox68_Ftz:0.2074115320)91:0.0536082675,((((B.lanceolatum_Hox5:0.0260588716,(((((C.telata_Dfd:0.0000020262,(D.melanogaster_Hox4_Dfd:0.0964725503,(F.sp_CentHox:0.0133292009,N.vectensis_HD065:1.0815499628)94:0.1115995758)93:0.0554979730)89:0.0312942826,L.gigantea_Hox4_Dfd:0.0253180211)91:0.0623356303,N.sp2_CentHox:0.0266947788)70:0.0000020262,P.caudatus_Hox4_Dfd:0.0000020262)98:0.0232009224,(C.telata_Scr:0.0000020262,L.gigantea_Hox5_Scr:0.1157138312)97:0.0483883946)84:0.0487346425)73:0.0125591112,D.melanogaster_Hox5_Scr:0.0999300561)71:0.0028706291,P.caudatus_Scr:0.1114936652)83:0.0387114925,S.purpuratus_HoxA5:0.0244293806)83:0.0497139072)51:0.0000020355)58:0.0465939588,D.longitubus_CentHox:0.0000020262)74:0.0070420961)47:0.0000020262,P.karlingi_CentHox:0.0595796544)91:0.0263746525,P.rubra_CentHox:0.0000020262)96:0.1318662314,(N.vectensis_AnthozoanHox1:0.2518589049,N.vectensis_AnthozoanHox1A:0.1797411097)99:0.1889993764)97:0.0668513176,(((B.floridae_Xlox:0.0254271857,S.purpuratus_Xlox:0.0000020262)100:0.0258424104,L.gigantea_Xlox:0.0000020262)100:0.0959228883,(C.telata_Xlox:0.0910378704,P.caudatus_Xlox:0.5155964351)97:0.0313819931)100:0.1393579343)97:0.0683026606,((((B.floridae_Hox3:0.0000020262,(T.castaneum_Hox3_zen1:0.1623410951,T.castaneum_Hox3_zen2:0.1083282413)100:0.2623775540)99:0.0568609433,S.purpuratus_HoxA3:0.2353521445)81:0.0152531858,(C.telata_Hox3:0.0000020262,L.goshimai_Hox3:0.1215841640)98:0.0237854438)62:0.0000025675,P.caudatus_Hox3:0.0000020262)99:0.1067810259)96:0.1086778529,(((((B.floridae_Gsx:0.1013514323,C.telata_Gsx:0.0935316991)97:0.0861102809,S.purpuratus_Gsx_HB1:0.0000021846)91:0.0267894180,(((((D.longitubus_Gsx:0.0380123593,H.miamia_Gsx:0.4233818125)82:0.2599459407,(((I.pulchra_Gsx:0.0410991811,P.variabilis_Gsx:0.3060789803)99:0.4226884395,P.naikaiensis_G_Gsx:0.0000021039)97:0.1312249806,S.roscoffensis_Gsx:0.1626758715)98:0.2863023332)100:0.4024871850,X.bocki_G_Gsx2_:0.1997074096)100:0.4221897276,D.melanogaster_Ind_Gsx:0.0812804184)62:0.1667946363,(X.bocki_G_Gsx1_:0.0000020262,X.profunda_Gsx:0.0000020262)87:0.0270705963)69:0.0225358630)59:0.0000020547,L.gigantea_Gsx:0.0936423580)99:0.3741874023,N.vectensis_Gsx:0.0445854563)100:0.3501321000)96:0.0981528276)94:0.0553629381,(N.vectensis_AnthozoanHox7:0.3378694773,(N.vectensis_AnthozoanHox8A:0.0000020262,N.vectensis_AnthozoanHox8B:0.0000020262)100:0.0528851591)100:0.3057210391)97:0.2503877556,N.vectensis_AnthozoanHox6A:0.2201689815)100:1.1015993176,L.gigantea_Cdx:0.0000020355)97:0.0515440769,N.sp2_Cdx1:0.0878397570)94:0.0181613481,P.caudatus_Cdx_Caudal:0.0217865694)96:0.0312016047,(C.elegans_Cdx_pal1:0.8903051580,(C.telata_Caudal:0.3723151431,D.melanogaster_Cdx_cad:0.1574793211)96:0.0594961708)96:0.0122047354)99:0.0705747534,S.purpuratus_Cdx:0.0577400874)88:0.1217565585,B.floridae_Cdx:0.1719537940)99:0.3060257351,N.westbladi_P_Cdx:0.0501866279)75:0.0293343372,M.stichopi_Cdx:0.0998568195)75:0.0489358103,(X.bocki_G_Cdx:0.0000020262,X.profunda_Cdx:0.0000020262)100:0.0279152209)87:0.0850637327,D.gymnopharyngeus_Cdx_:0.0113496705)91:0.0653377121,(H.miamia_Cdx:0.0666715737,(P.rubra_Cdx1:0.3447222694,P.rubra_Cdx2:0.0000028282)100:0.1066119443)66:0.0198427469)97:0.0510195179,(((I.pulchra_Cdx:0.0000000000,S.roscoffensis_Cdx:0.0000000000):0.0000020262,P.naikaiensis_Cdx:0.0000020262)91:0.0000020262,M.sp14_Cdx:0.0246160550)87:0.0000020262)83:0.0016321887,P.rhammifera_Cdx:0.0000020262)61:0.0003638799,(A.virescens_Cdx:0.0000020262,P.karlingi_Cdx:0.0172325628)48:0.0093793768);
+
+TIME STAMP
+----------
+
+Date and time: Tue Feb 25 23:46:55 2025
+Total CPU time used: 2969.694484 seconds (0h:49m:29s)
+Total wall-clock time used: 3838.562843 seconds (1h:3m:58s)
+
