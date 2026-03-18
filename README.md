@@ -6,4 +6,3 @@
 
 02-TREE: IQTREE output
 
-xena_phylotocol.md: analysis protocol
