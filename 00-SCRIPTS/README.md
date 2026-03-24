@@ -1,4 +1,4 @@
-### scripts written by JF Ryan, Whitney Laboratory for Marine Bioscience, University of Florida
+Scripts written by JF Ryan, Whitney Laboratory for Marine Bioscience, University of Florida
 
 ### get_upstream_hd_downstream.pl
 script used to dissect flanking 20 amino acid C-terminal and N-terminal regions from the 60-amino acid homeodomains  
