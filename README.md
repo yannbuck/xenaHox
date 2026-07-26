@@ -4,7 +4,7 @@ Hox genes are central to antero-posterior patterning across Bilateria, yet their
 
 We recovered strong support for xenacoelomorph antHox as homologous to bilaterian Hox1, but poor support for central and posterior Hox genes. The heavy conservation of Hox homeodomain and motif content shared between both groups suggests substantial retention of ancestral bilaterian features, while lineage-specific variation indicates that both gene divergence and loss shaped extant xenacoelomorph HOX-L content.
 
-<img width="2100" height="1062" alt="xenahox_promotional" src="https://github.com/user-attachments/assets/9e0901c0-4b4c-415d-89c8-d07f081c4589"/> 
+<img width="500" alt="xenahox_promotional" src="https://github.com/user-attachments/assets/9e0901c0-4b4c-415d-89c8-d07f081c4589"/>
 
 #### Image: Hox and ParaHox gene evolution within Xenacoelomorpha with photos of representatives of the Xenacoelomorpha clades on their respective branches. _Xenoturbella_ is about 10 mm in length, whereas the other species shown are 0.7-1.5 mm. All photos by Ulf Jondelius.
 
